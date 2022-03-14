@@ -77,11 +77,32 @@ module user_project_wrapper #(
     // User maskable interrupt signals
     output [2:0] user_irq
 );
+    sky130_sram_1kbyte_1rw1r_32x256_8 openram_1kB
+    (
+    `ifdef USE_POWER_PINS
+        .vccd1 (vccd1),
+        .vssd1 (vssd1),
+    `endif
+
+        .clk0 (user_clock2),
+        .csb0 (1'b0),
+        .web0 (wbs_we_i),
+        .wmask0 (wbs_sel_i),
+        .addr0 (wbs_adr_i[7:0]),
+        .din0 (wbs_dat_i),
+        .dout0 (la_data_out[31:0]),
+
+        .clk1 (user_clock2),
+        .csb1 (1'b0),
+        .addr1 (wbs_adr_i[15:8]),
+        .dout1 (la_data_out[63:32])
+    );
 
 /*--------------------------------------*/
 /* User project is instantiated  here   */
 /*--------------------------------------*/
 
+/*
 user_proj_example mprj (
 `ifdef USE_POWER_PINS
 	.vccd1(vccd1),	// User area 1 1.8V power
@@ -117,7 +138,7 @@ user_proj_example mprj (
     // IRQ
     .irq(user_irq)
 );
-
+*/
 endmodule	// user_project_wrapper
 
 `default_nettype wire
