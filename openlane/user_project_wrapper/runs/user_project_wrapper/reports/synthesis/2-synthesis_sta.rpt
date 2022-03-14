@@ -1,0 +1,24 @@
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+Startpoint: user_clock2 (clock source 'user_clock2')
+Endpoint: openram_1kB/clk0 (internal pin)
+Path Group: (none)
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    5.00 v user_clock2 (in)
+     2    0.00                           user_clock2 (net)
+                  0.00    0.00    5.00 v openram_1kB/clk0 (sky130_sram_1kbyte_1rw1r_32x256_8)
+                                  5.00   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+No paths found.

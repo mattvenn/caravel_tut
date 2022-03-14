@@ -1,0 +1,77 @@
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+
+======================= Slowest Corner ===================================
+
+Startpoint: user_clock2 (clock source 'user_clock2')
+Endpoint: openram_1kB/clk1 (internal pin)
+Path Group: (none)
+Path Type: max
+Corner: ss
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  1.44    1.61    6.61 v user_clock2 (in)
+     2    0.38                           user_clock2 (net)
+                  2.24    0.00    6.61 v openram_1kB/clk1 (sky130_sram_1kbyte_1rw1r_32x256_8)
+                                  6.61   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+======================= Typical Corner ===================================
+
+Startpoint: user_clock2 (clock source 'user_clock2')
+Endpoint: openram_1kB/clk1 (internal pin)
+Path Group: (none)
+Path Type: max
+Corner: tt
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.56    1.14    6.14 v user_clock2 (in)
+     2    0.38                           user_clock2 (net)
+                  1.76    0.00    6.14 v openram_1kB/clk1 (sky130_sram_1kbyte_1rw1r_32x256_8)
+                                  6.14   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+======================= Fastest Corner ===================================
+
+Startpoint: user_clock2 (clock source 'user_clock2')
+Endpoint: openram_1kB/clk1 (internal pin)
+Path Group: (none)
+Path Type: max
+Corner: ff
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.28    0.98    5.98 v user_clock2 (in)
+     2    0.38                           user_clock2 (net)
+                  1.60    0.00    5.98 v openram_1kB/clk1 (sky130_sram_1kbyte_1rw1r_32x256_8)
+                                  5.98   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+
+======================= Slowest Corner ===================================
+
+No paths found.
+
+======================= Typical Corner ===================================
+
+No paths found.
+
+======================= Fastest Corner ===================================
+
+No paths found.

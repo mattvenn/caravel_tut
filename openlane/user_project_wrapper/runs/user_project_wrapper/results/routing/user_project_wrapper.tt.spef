@@ -1,0 +1,4598 @@
+*SPEF "ieee 1481-1999"
+*DESIGN "user_project_wrapper"
+*DATE "11:11:11 Fri 11 11, 1111"
+*VENDOR "OpenRCX"
+*PROGRAM "Parallel Extraction"
+*VERSION "1.0"
+*DESIGN_FLOW "NAME_SCOPE LOCAL" "PIN_CAP NONE"
+*DIVIDER /
+*DELIMITER :
+*BUS_DELIMITER []
+*T_UNIT 1 NS
+*C_UNIT 1 PF
+*R_UNIT 1 OHM
+*L_UNIT 1 HENRY
+
+*NAME_MAP
+*1 analog_io[0]
+*2 analog_io[10]
+*3 analog_io[11]
+*4 analog_io[12]
+*5 analog_io[13]
+*6 analog_io[14]
+*7 analog_io[15]
+*8 analog_io[16]
+*9 analog_io[17]
+*10 analog_io[18]
+*11 analog_io[19]
+*12 analog_io[1]
+*13 analog_io[20]
+*14 analog_io[21]
+*15 analog_io[22]
+*16 analog_io[23]
+*17 analog_io[24]
+*18 analog_io[25]
+*19 analog_io[26]
+*20 analog_io[27]
+*21 analog_io[28]
+*22 analog_io[2]
+*23 analog_io[3]
+*24 analog_io[4]
+*25 analog_io[5]
+*26 analog_io[6]
+*27 analog_io[7]
+*28 analog_io[8]
+*29 analog_io[9]
+*30 io_in[0]
+*31 io_in[10]
+*32 io_in[11]
+*33 io_in[12]
+*34 io_in[13]
+*35 io_in[14]
+*36 io_in[15]
+*37 io_in[16]
+*38 io_in[17]
+*39 io_in[18]
+*40 io_in[19]
+*41 io_in[1]
+*42 io_in[20]
+*43 io_in[21]
+*44 io_in[22]
+*45 io_in[23]
+*46 io_in[24]
+*47 io_in[25]
+*48 io_in[26]
+*49 io_in[27]
+*50 io_in[28]
+*51 io_in[29]
+*52 io_in[2]
+*53 io_in[30]
+*54 io_in[31]
+*55 io_in[32]
+*56 io_in[33]
+*57 io_in[34]
+*58 io_in[35]
+*59 io_in[36]
+*60 io_in[37]
+*61 io_in[3]
+*62 io_in[4]
+*63 io_in[5]
+*64 io_in[6]
+*65 io_in[7]
+*66 io_in[8]
+*67 io_in[9]
+*68 io_oeb[0]
+*69 io_oeb[10]
+*70 io_oeb[11]
+*71 io_oeb[12]
+*72 io_oeb[13]
+*73 io_oeb[14]
+*74 io_oeb[15]
+*75 io_oeb[16]
+*76 io_oeb[17]
+*77 io_oeb[18]
+*78 io_oeb[19]
+*79 io_oeb[1]
+*80 io_oeb[20]
+*81 io_oeb[21]
+*82 io_oeb[22]
+*83 io_oeb[23]
+*84 io_oeb[24]
+*85 io_oeb[25]
+*86 io_oeb[26]
+*87 io_oeb[27]
+*88 io_oeb[28]
+*89 io_oeb[29]
+*90 io_oeb[2]
+*91 io_oeb[30]
+*92 io_oeb[31]
+*93 io_oeb[32]
+*94 io_oeb[33]
+*95 io_oeb[34]
+*96 io_oeb[35]
+*97 io_oeb[36]
+*98 io_oeb[37]
+*99 io_oeb[3]
+*100 io_oeb[4]
+*101 io_oeb[5]
+*102 io_oeb[6]
+*103 io_oeb[7]
+*104 io_oeb[8]
+*105 io_oeb[9]
+*106 io_out[0]
+*107 io_out[10]
+*108 io_out[11]
+*109 io_out[12]
+*110 io_out[13]
+*111 io_out[14]
+*112 io_out[15]
+*113 io_out[16]
+*114 io_out[17]
+*115 io_out[18]
+*116 io_out[19]
+*117 io_out[1]
+*118 io_out[20]
+*119 io_out[21]
+*120 io_out[22]
+*121 io_out[23]
+*122 io_out[24]
+*123 io_out[25]
+*124 io_out[26]
+*125 io_out[27]
+*126 io_out[28]
+*127 io_out[29]
+*128 io_out[2]
+*129 io_out[30]
+*130 io_out[31]
+*131 io_out[32]
+*132 io_out[33]
+*133 io_out[34]
+*134 io_out[35]
+*135 io_out[36]
+*136 io_out[37]
+*137 io_out[3]
+*138 io_out[4]
+*139 io_out[5]
+*140 io_out[6]
+*141 io_out[7]
+*142 io_out[8]
+*143 io_out[9]
+*144 la_data_in[0]
+*145 la_data_in[100]
+*146 la_data_in[101]
+*147 la_data_in[102]
+*148 la_data_in[103]
+*149 la_data_in[104]
+*150 la_data_in[105]
+*151 la_data_in[106]
+*152 la_data_in[107]
+*153 la_data_in[108]
+*154 la_data_in[109]
+*155 la_data_in[10]
+*156 la_data_in[110]
+*157 la_data_in[111]
+*158 la_data_in[112]
+*159 la_data_in[113]
+*160 la_data_in[114]
+*161 la_data_in[115]
+*162 la_data_in[116]
+*163 la_data_in[117]
+*164 la_data_in[118]
+*165 la_data_in[119]
+*166 la_data_in[11]
+*167 la_data_in[120]
+*168 la_data_in[121]
+*169 la_data_in[122]
+*170 la_data_in[123]
+*171 la_data_in[124]
+*172 la_data_in[125]
+*173 la_data_in[126]
+*174 la_data_in[127]
+*175 la_data_in[12]
+*176 la_data_in[13]
+*177 la_data_in[14]
+*178 la_data_in[15]
+*179 la_data_in[16]
+*180 la_data_in[17]
+*181 la_data_in[18]
+*182 la_data_in[19]
+*183 la_data_in[1]
+*184 la_data_in[20]
+*185 la_data_in[21]
+*186 la_data_in[22]
+*187 la_data_in[23]
+*188 la_data_in[24]
+*189 la_data_in[25]
+*190 la_data_in[26]
+*191 la_data_in[27]
+*192 la_data_in[28]
+*193 la_data_in[29]
+*194 la_data_in[2]
+*195 la_data_in[30]
+*196 la_data_in[31]
+*197 la_data_in[32]
+*198 la_data_in[33]
+*199 la_data_in[34]
+*200 la_data_in[35]
+*201 la_data_in[36]
+*202 la_data_in[37]
+*203 la_data_in[38]
+*204 la_data_in[39]
+*205 la_data_in[3]
+*206 la_data_in[40]
+*207 la_data_in[41]
+*208 la_data_in[42]
+*209 la_data_in[43]
+*210 la_data_in[44]
+*211 la_data_in[45]
+*212 la_data_in[46]
+*213 la_data_in[47]
+*214 la_data_in[48]
+*215 la_data_in[49]
+*216 la_data_in[4]
+*217 la_data_in[50]
+*218 la_data_in[51]
+*219 la_data_in[52]
+*220 la_data_in[53]
+*221 la_data_in[54]
+*222 la_data_in[55]
+*223 la_data_in[56]
+*224 la_data_in[57]
+*225 la_data_in[58]
+*226 la_data_in[59]
+*227 la_data_in[5]
+*228 la_data_in[60]
+*229 la_data_in[61]
+*230 la_data_in[62]
+*231 la_data_in[63]
+*232 la_data_in[64]
+*233 la_data_in[65]
+*234 la_data_in[66]
+*235 la_data_in[67]
+*236 la_data_in[68]
+*237 la_data_in[69]
+*238 la_data_in[6]
+*239 la_data_in[70]
+*240 la_data_in[71]
+*241 la_data_in[72]
+*242 la_data_in[73]
+*243 la_data_in[74]
+*244 la_data_in[75]
+*245 la_data_in[76]
+*246 la_data_in[77]
+*247 la_data_in[78]
+*248 la_data_in[79]
+*249 la_data_in[7]
+*250 la_data_in[80]
+*251 la_data_in[81]
+*252 la_data_in[82]
+*253 la_data_in[83]
+*254 la_data_in[84]
+*255 la_data_in[85]
+*256 la_data_in[86]
+*257 la_data_in[87]
+*258 la_data_in[88]
+*259 la_data_in[89]
+*260 la_data_in[8]
+*261 la_data_in[90]
+*262 la_data_in[91]
+*263 la_data_in[92]
+*264 la_data_in[93]
+*265 la_data_in[94]
+*266 la_data_in[95]
+*267 la_data_in[96]
+*268 la_data_in[97]
+*269 la_data_in[98]
+*270 la_data_in[99]
+*271 la_data_in[9]
+*272 la_data_out[0]
+*273 la_data_out[100]
+*274 la_data_out[101]
+*275 la_data_out[102]
+*276 la_data_out[103]
+*277 la_data_out[104]
+*278 la_data_out[105]
+*279 la_data_out[106]
+*280 la_data_out[107]
+*281 la_data_out[108]
+*282 la_data_out[109]
+*283 la_data_out[10]
+*284 la_data_out[110]
+*285 la_data_out[111]
+*286 la_data_out[112]
+*287 la_data_out[113]
+*288 la_data_out[114]
+*289 la_data_out[115]
+*290 la_data_out[116]
+*291 la_data_out[117]
+*292 la_data_out[118]
+*293 la_data_out[119]
+*294 la_data_out[11]
+*295 la_data_out[120]
+*296 la_data_out[121]
+*297 la_data_out[122]
+*298 la_data_out[123]
+*299 la_data_out[124]
+*300 la_data_out[125]
+*301 la_data_out[126]
+*302 la_data_out[127]
+*303 la_data_out[12]
+*304 la_data_out[13]
+*305 la_data_out[14]
+*306 la_data_out[15]
+*307 la_data_out[16]
+*308 la_data_out[17]
+*309 la_data_out[18]
+*310 la_data_out[19]
+*311 la_data_out[1]
+*312 la_data_out[20]
+*313 la_data_out[21]
+*314 la_data_out[22]
+*315 la_data_out[23]
+*316 la_data_out[24]
+*317 la_data_out[25]
+*318 la_data_out[26]
+*319 la_data_out[27]
+*320 la_data_out[28]
+*321 la_data_out[29]
+*322 la_data_out[2]
+*323 la_data_out[30]
+*324 la_data_out[31]
+*325 la_data_out[32]
+*326 la_data_out[33]
+*327 la_data_out[34]
+*328 la_data_out[35]
+*329 la_data_out[36]
+*330 la_data_out[37]
+*331 la_data_out[38]
+*332 la_data_out[39]
+*333 la_data_out[3]
+*334 la_data_out[40]
+*335 la_data_out[41]
+*336 la_data_out[42]
+*337 la_data_out[43]
+*338 la_data_out[44]
+*339 la_data_out[45]
+*340 la_data_out[46]
+*341 la_data_out[47]
+*342 la_data_out[48]
+*343 la_data_out[49]
+*344 la_data_out[4]
+*345 la_data_out[50]
+*346 la_data_out[51]
+*347 la_data_out[52]
+*348 la_data_out[53]
+*349 la_data_out[54]
+*350 la_data_out[55]
+*351 la_data_out[56]
+*352 la_data_out[57]
+*353 la_data_out[58]
+*354 la_data_out[59]
+*355 la_data_out[5]
+*356 la_data_out[60]
+*357 la_data_out[61]
+*358 la_data_out[62]
+*359 la_data_out[63]
+*360 la_data_out[64]
+*361 la_data_out[65]
+*362 la_data_out[66]
+*363 la_data_out[67]
+*364 la_data_out[68]
+*365 la_data_out[69]
+*366 la_data_out[6]
+*367 la_data_out[70]
+*368 la_data_out[71]
+*369 la_data_out[72]
+*370 la_data_out[73]
+*371 la_data_out[74]
+*372 la_data_out[75]
+*373 la_data_out[76]
+*374 la_data_out[77]
+*375 la_data_out[78]
+*376 la_data_out[79]
+*377 la_data_out[7]
+*378 la_data_out[80]
+*379 la_data_out[81]
+*380 la_data_out[82]
+*381 la_data_out[83]
+*382 la_data_out[84]
+*383 la_data_out[85]
+*384 la_data_out[86]
+*385 la_data_out[87]
+*386 la_data_out[88]
+*387 la_data_out[89]
+*388 la_data_out[8]
+*389 la_data_out[90]
+*390 la_data_out[91]
+*391 la_data_out[92]
+*392 la_data_out[93]
+*393 la_data_out[94]
+*394 la_data_out[95]
+*395 la_data_out[96]
+*396 la_data_out[97]
+*397 la_data_out[98]
+*398 la_data_out[99]
+*399 la_data_out[9]
+*400 la_oenb[0]
+*401 la_oenb[100]
+*402 la_oenb[101]
+*403 la_oenb[102]
+*404 la_oenb[103]
+*405 la_oenb[104]
+*406 la_oenb[105]
+*407 la_oenb[106]
+*408 la_oenb[107]
+*409 la_oenb[108]
+*410 la_oenb[109]
+*411 la_oenb[10]
+*412 la_oenb[110]
+*413 la_oenb[111]
+*414 la_oenb[112]
+*415 la_oenb[113]
+*416 la_oenb[114]
+*417 la_oenb[115]
+*418 la_oenb[116]
+*419 la_oenb[117]
+*420 la_oenb[118]
+*421 la_oenb[119]
+*422 la_oenb[11]
+*423 la_oenb[120]
+*424 la_oenb[121]
+*425 la_oenb[122]
+*426 la_oenb[123]
+*427 la_oenb[124]
+*428 la_oenb[125]
+*429 la_oenb[126]
+*430 la_oenb[127]
+*431 la_oenb[12]
+*432 la_oenb[13]
+*433 la_oenb[14]
+*434 la_oenb[15]
+*435 la_oenb[16]
+*436 la_oenb[17]
+*437 la_oenb[18]
+*438 la_oenb[19]
+*439 la_oenb[1]
+*440 la_oenb[20]
+*441 la_oenb[21]
+*442 la_oenb[22]
+*443 la_oenb[23]
+*444 la_oenb[24]
+*445 la_oenb[25]
+*446 la_oenb[26]
+*447 la_oenb[27]
+*448 la_oenb[28]
+*449 la_oenb[29]
+*450 la_oenb[2]
+*451 la_oenb[30]
+*452 la_oenb[31]
+*453 la_oenb[32]
+*454 la_oenb[33]
+*455 la_oenb[34]
+*456 la_oenb[35]
+*457 la_oenb[36]
+*458 la_oenb[37]
+*459 la_oenb[38]
+*460 la_oenb[39]
+*461 la_oenb[3]
+*462 la_oenb[40]
+*463 la_oenb[41]
+*464 la_oenb[42]
+*465 la_oenb[43]
+*466 la_oenb[44]
+*467 la_oenb[45]
+*468 la_oenb[46]
+*469 la_oenb[47]
+*470 la_oenb[48]
+*471 la_oenb[49]
+*472 la_oenb[4]
+*473 la_oenb[50]
+*474 la_oenb[51]
+*475 la_oenb[52]
+*476 la_oenb[53]
+*477 la_oenb[54]
+*478 la_oenb[55]
+*479 la_oenb[56]
+*480 la_oenb[57]
+*481 la_oenb[58]
+*482 la_oenb[59]
+*483 la_oenb[5]
+*484 la_oenb[60]
+*485 la_oenb[61]
+*486 la_oenb[62]
+*487 la_oenb[63]
+*488 la_oenb[64]
+*489 la_oenb[65]
+*490 la_oenb[66]
+*491 la_oenb[67]
+*492 la_oenb[68]
+*493 la_oenb[69]
+*494 la_oenb[6]
+*495 la_oenb[70]
+*496 la_oenb[71]
+*497 la_oenb[72]
+*498 la_oenb[73]
+*499 la_oenb[74]
+*500 la_oenb[75]
+*501 la_oenb[76]
+*502 la_oenb[77]
+*503 la_oenb[78]
+*504 la_oenb[79]
+*505 la_oenb[7]
+*506 la_oenb[80]
+*507 la_oenb[81]
+*508 la_oenb[82]
+*509 la_oenb[83]
+*510 la_oenb[84]
+*511 la_oenb[85]
+*512 la_oenb[86]
+*513 la_oenb[87]
+*514 la_oenb[88]
+*515 la_oenb[89]
+*516 la_oenb[8]
+*517 la_oenb[90]
+*518 la_oenb[91]
+*519 la_oenb[92]
+*520 la_oenb[93]
+*521 la_oenb[94]
+*522 la_oenb[95]
+*523 la_oenb[96]
+*524 la_oenb[97]
+*525 la_oenb[98]
+*526 la_oenb[99]
+*527 la_oenb[9]
+*528 user_clock2
+*529 user_irq[0]
+*530 user_irq[1]
+*531 user_irq[2]
+*540 wb_clk_i
+*541 wb_rst_i
+*542 wbs_ack_o
+*543 wbs_adr_i[0]
+*544 wbs_adr_i[10]
+*545 wbs_adr_i[11]
+*546 wbs_adr_i[12]
+*547 wbs_adr_i[13]
+*548 wbs_adr_i[14]
+*549 wbs_adr_i[15]
+*550 wbs_adr_i[16]
+*551 wbs_adr_i[17]
+*552 wbs_adr_i[18]
+*553 wbs_adr_i[19]
+*554 wbs_adr_i[1]
+*555 wbs_adr_i[20]
+*556 wbs_adr_i[21]
+*557 wbs_adr_i[22]
+*558 wbs_adr_i[23]
+*559 wbs_adr_i[24]
+*560 wbs_adr_i[25]
+*561 wbs_adr_i[26]
+*562 wbs_adr_i[27]
+*563 wbs_adr_i[28]
+*564 wbs_adr_i[29]
+*565 wbs_adr_i[2]
+*566 wbs_adr_i[30]
+*567 wbs_adr_i[31]
+*568 wbs_adr_i[3]
+*569 wbs_adr_i[4]
+*570 wbs_adr_i[5]
+*571 wbs_adr_i[6]
+*572 wbs_adr_i[7]
+*573 wbs_adr_i[8]
+*574 wbs_adr_i[9]
+*575 wbs_cyc_i
+*576 wbs_dat_i[0]
+*577 wbs_dat_i[10]
+*578 wbs_dat_i[11]
+*579 wbs_dat_i[12]
+*580 wbs_dat_i[13]
+*581 wbs_dat_i[14]
+*582 wbs_dat_i[15]
+*583 wbs_dat_i[16]
+*584 wbs_dat_i[17]
+*585 wbs_dat_i[18]
+*586 wbs_dat_i[19]
+*587 wbs_dat_i[1]
+*588 wbs_dat_i[20]
+*589 wbs_dat_i[21]
+*590 wbs_dat_i[22]
+*591 wbs_dat_i[23]
+*592 wbs_dat_i[24]
+*593 wbs_dat_i[25]
+*594 wbs_dat_i[26]
+*595 wbs_dat_i[27]
+*596 wbs_dat_i[28]
+*597 wbs_dat_i[29]
+*598 wbs_dat_i[2]
+*599 wbs_dat_i[30]
+*600 wbs_dat_i[31]
+*601 wbs_dat_i[3]
+*602 wbs_dat_i[4]
+*603 wbs_dat_i[5]
+*604 wbs_dat_i[6]
+*605 wbs_dat_i[7]
+*606 wbs_dat_i[8]
+*607 wbs_dat_i[9]
+*608 wbs_dat_o[0]
+*609 wbs_dat_o[10]
+*610 wbs_dat_o[11]
+*611 wbs_dat_o[12]
+*612 wbs_dat_o[13]
+*613 wbs_dat_o[14]
+*614 wbs_dat_o[15]
+*615 wbs_dat_o[16]
+*616 wbs_dat_o[17]
+*617 wbs_dat_o[18]
+*618 wbs_dat_o[19]
+*619 wbs_dat_o[1]
+*620 wbs_dat_o[20]
+*621 wbs_dat_o[21]
+*622 wbs_dat_o[22]
+*623 wbs_dat_o[23]
+*624 wbs_dat_o[24]
+*625 wbs_dat_o[25]
+*626 wbs_dat_o[26]
+*627 wbs_dat_o[27]
+*628 wbs_dat_o[28]
+*629 wbs_dat_o[29]
+*630 wbs_dat_o[2]
+*631 wbs_dat_o[30]
+*632 wbs_dat_o[31]
+*633 wbs_dat_o[3]
+*634 wbs_dat_o[4]
+*635 wbs_dat_o[5]
+*636 wbs_dat_o[6]
+*637 wbs_dat_o[7]
+*638 wbs_dat_o[8]
+*639 wbs_dat_o[9]
+*640 wbs_sel_i[0]
+*641 wbs_sel_i[1]
+*642 wbs_sel_i[2]
+*643 wbs_sel_i[3]
+*644 wbs_stb_i
+*645 wbs_we_i
+*646 openram_1kB
+
+*PORTS
+analog_io[0] I
+analog_io[10] I
+analog_io[11] I
+analog_io[12] I
+analog_io[13] I
+analog_io[14] I
+analog_io[15] I
+analog_io[16] I
+analog_io[17] I
+analog_io[18] I
+analog_io[19] I
+analog_io[1] I
+analog_io[20] I
+analog_io[21] I
+analog_io[22] I
+analog_io[23] I
+analog_io[24] I
+analog_io[25] I
+analog_io[26] I
+analog_io[27] I
+analog_io[28] I
+analog_io[2] I
+analog_io[3] I
+analog_io[4] I
+analog_io[5] I
+analog_io[6] I
+analog_io[7] I
+analog_io[8] I
+analog_io[9] I
+io_in[0] I
+io_in[10] I
+io_in[11] I
+io_in[12] I
+io_in[13] I
+io_in[14] I
+io_in[15] I
+io_in[16] I
+io_in[17] I
+io_in[18] I
+io_in[19] I
+io_in[1] I
+io_in[20] I
+io_in[21] I
+io_in[22] I
+io_in[23] I
+io_in[24] I
+io_in[25] I
+io_in[26] I
+io_in[27] I
+io_in[28] I
+io_in[29] I
+io_in[2] I
+io_in[30] I
+io_in[31] I
+io_in[32] I
+io_in[33] I
+io_in[34] I
+io_in[35] I
+io_in[36] I
+io_in[37] I
+io_in[3] I
+io_in[4] I
+io_in[5] I
+io_in[6] I
+io_in[7] I
+io_in[8] I
+io_in[9] I
+io_oeb[0] O
+io_oeb[10] O
+io_oeb[11] O
+io_oeb[12] O
+io_oeb[13] O
+io_oeb[14] O
+io_oeb[15] O
+io_oeb[16] O
+io_oeb[17] O
+io_oeb[18] O
+io_oeb[19] O
+io_oeb[1] O
+io_oeb[20] O
+io_oeb[21] O
+io_oeb[22] O
+io_oeb[23] O
+io_oeb[24] O
+io_oeb[25] O
+io_oeb[26] O
+io_oeb[27] O
+io_oeb[28] O
+io_oeb[29] O
+io_oeb[2] O
+io_oeb[30] O
+io_oeb[31] O
+io_oeb[32] O
+io_oeb[33] O
+io_oeb[34] O
+io_oeb[35] O
+io_oeb[36] O
+io_oeb[37] O
+io_oeb[3] O
+io_oeb[4] O
+io_oeb[5] O
+io_oeb[6] O
+io_oeb[7] O
+io_oeb[8] O
+io_oeb[9] O
+io_out[0] O
+io_out[10] O
+io_out[11] O
+io_out[12] O
+io_out[13] O
+io_out[14] O
+io_out[15] O
+io_out[16] O
+io_out[17] O
+io_out[18] O
+io_out[19] O
+io_out[1] O
+io_out[20] O
+io_out[21] O
+io_out[22] O
+io_out[23] O
+io_out[24] O
+io_out[25] O
+io_out[26] O
+io_out[27] O
+io_out[28] O
+io_out[29] O
+io_out[2] O
+io_out[30] O
+io_out[31] O
+io_out[32] O
+io_out[33] O
+io_out[34] O
+io_out[35] O
+io_out[36] O
+io_out[37] O
+io_out[3] O
+io_out[4] O
+io_out[5] O
+io_out[6] O
+io_out[7] O
+io_out[8] O
+io_out[9] O
+la_data_in[0] I
+la_data_in[100] I
+la_data_in[101] I
+la_data_in[102] I
+la_data_in[103] I
+la_data_in[104] I
+la_data_in[105] I
+la_data_in[106] I
+la_data_in[107] I
+la_data_in[108] I
+la_data_in[109] I
+la_data_in[10] I
+la_data_in[110] I
+la_data_in[111] I
+la_data_in[112] I
+la_data_in[113] I
+la_data_in[114] I
+la_data_in[115] I
+la_data_in[116] I
+la_data_in[117] I
+la_data_in[118] I
+la_data_in[119] I
+la_data_in[11] I
+la_data_in[120] I
+la_data_in[121] I
+la_data_in[122] I
+la_data_in[123] I
+la_data_in[124] I
+la_data_in[125] I
+la_data_in[126] I
+la_data_in[127] I
+la_data_in[12] I
+la_data_in[13] I
+la_data_in[14] I
+la_data_in[15] I
+la_data_in[16] I
+la_data_in[17] I
+la_data_in[18] I
+la_data_in[19] I
+la_data_in[1] I
+la_data_in[20] I
+la_data_in[21] I
+la_data_in[22] I
+la_data_in[23] I
+la_data_in[24] I
+la_data_in[25] I
+la_data_in[26] I
+la_data_in[27] I
+la_data_in[28] I
+la_data_in[29] I
+la_data_in[2] I
+la_data_in[30] I
+la_data_in[31] I
+la_data_in[32] I
+la_data_in[33] I
+la_data_in[34] I
+la_data_in[35] I
+la_data_in[36] I
+la_data_in[37] I
+la_data_in[38] I
+la_data_in[39] I
+la_data_in[3] I
+la_data_in[40] I
+la_data_in[41] I
+la_data_in[42] I
+la_data_in[43] I
+la_data_in[44] I
+la_data_in[45] I
+la_data_in[46] I
+la_data_in[47] I
+la_data_in[48] I
+la_data_in[49] I
+la_data_in[4] I
+la_data_in[50] I
+la_data_in[51] I
+la_data_in[52] I
+la_data_in[53] I
+la_data_in[54] I
+la_data_in[55] I
+la_data_in[56] I
+la_data_in[57] I
+la_data_in[58] I
+la_data_in[59] I
+la_data_in[5] I
+la_data_in[60] I
+la_data_in[61] I
+la_data_in[62] I
+la_data_in[63] I
+la_data_in[64] I
+la_data_in[65] I
+la_data_in[66] I
+la_data_in[67] I
+la_data_in[68] I
+la_data_in[69] I
+la_data_in[6] I
+la_data_in[70] I
+la_data_in[71] I
+la_data_in[72] I
+la_data_in[73] I
+la_data_in[74] I
+la_data_in[75] I
+la_data_in[76] I
+la_data_in[77] I
+la_data_in[78] I
+la_data_in[79] I
+la_data_in[7] I
+la_data_in[80] I
+la_data_in[81] I
+la_data_in[82] I
+la_data_in[83] I
+la_data_in[84] I
+la_data_in[85] I
+la_data_in[86] I
+la_data_in[87] I
+la_data_in[88] I
+la_data_in[89] I
+la_data_in[8] I
+la_data_in[90] I
+la_data_in[91] I
+la_data_in[92] I
+la_data_in[93] I
+la_data_in[94] I
+la_data_in[95] I
+la_data_in[96] I
+la_data_in[97] I
+la_data_in[98] I
+la_data_in[99] I
+la_data_in[9] I
+la_data_out[0] O
+la_data_out[100] O
+la_data_out[101] O
+la_data_out[102] O
+la_data_out[103] O
+la_data_out[104] O
+la_data_out[105] O
+la_data_out[106] O
+la_data_out[107] O
+la_data_out[108] O
+la_data_out[109] O
+la_data_out[10] O
+la_data_out[110] O
+la_data_out[111] O
+la_data_out[112] O
+la_data_out[113] O
+la_data_out[114] O
+la_data_out[115] O
+la_data_out[116] O
+la_data_out[117] O
+la_data_out[118] O
+la_data_out[119] O
+la_data_out[11] O
+la_data_out[120] O
+la_data_out[121] O
+la_data_out[122] O
+la_data_out[123] O
+la_data_out[124] O
+la_data_out[125] O
+la_data_out[126] O
+la_data_out[127] O
+la_data_out[12] O
+la_data_out[13] O
+la_data_out[14] O
+la_data_out[15] O
+la_data_out[16] O
+la_data_out[17] O
+la_data_out[18] O
+la_data_out[19] O
+la_data_out[1] O
+la_data_out[20] O
+la_data_out[21] O
+la_data_out[22] O
+la_data_out[23] O
+la_data_out[24] O
+la_data_out[25] O
+la_data_out[26] O
+la_data_out[27] O
+la_data_out[28] O
+la_data_out[29] O
+la_data_out[2] O
+la_data_out[30] O
+la_data_out[31] O
+la_data_out[32] O
+la_data_out[33] O
+la_data_out[34] O
+la_data_out[35] O
+la_data_out[36] O
+la_data_out[37] O
+la_data_out[38] O
+la_data_out[39] O
+la_data_out[3] O
+la_data_out[40] O
+la_data_out[41] O
+la_data_out[42] O
+la_data_out[43] O
+la_data_out[44] O
+la_data_out[45] O
+la_data_out[46] O
+la_data_out[47] O
+la_data_out[48] O
+la_data_out[49] O
+la_data_out[4] O
+la_data_out[50] O
+la_data_out[51] O
+la_data_out[52] O
+la_data_out[53] O
+la_data_out[54] O
+la_data_out[55] O
+la_data_out[56] O
+la_data_out[57] O
+la_data_out[58] O
+la_data_out[59] O
+la_data_out[5] O
+la_data_out[60] O
+la_data_out[61] O
+la_data_out[62] O
+la_data_out[63] O
+la_data_out[64] O
+la_data_out[65] O
+la_data_out[66] O
+la_data_out[67] O
+la_data_out[68] O
+la_data_out[69] O
+la_data_out[6] O
+la_data_out[70] O
+la_data_out[71] O
+la_data_out[72] O
+la_data_out[73] O
+la_data_out[74] O
+la_data_out[75] O
+la_data_out[76] O
+la_data_out[77] O
+la_data_out[78] O
+la_data_out[79] O
+la_data_out[7] O
+la_data_out[80] O
+la_data_out[81] O
+la_data_out[82] O
+la_data_out[83] O
+la_data_out[84] O
+la_data_out[85] O
+la_data_out[86] O
+la_data_out[87] O
+la_data_out[88] O
+la_data_out[89] O
+la_data_out[8] O
+la_data_out[90] O
+la_data_out[91] O
+la_data_out[92] O
+la_data_out[93] O
+la_data_out[94] O
+la_data_out[95] O
+la_data_out[96] O
+la_data_out[97] O
+la_data_out[98] O
+la_data_out[99] O
+la_data_out[9] O
+la_oenb[0] I
+la_oenb[100] I
+la_oenb[101] I
+la_oenb[102] I
+la_oenb[103] I
+la_oenb[104] I
+la_oenb[105] I
+la_oenb[106] I
+la_oenb[107] I
+la_oenb[108] I
+la_oenb[109] I
+la_oenb[10] I
+la_oenb[110] I
+la_oenb[111] I
+la_oenb[112] I
+la_oenb[113] I
+la_oenb[114] I
+la_oenb[115] I
+la_oenb[116] I
+la_oenb[117] I
+la_oenb[118] I
+la_oenb[119] I
+la_oenb[11] I
+la_oenb[120] I
+la_oenb[121] I
+la_oenb[122] I
+la_oenb[123] I
+la_oenb[124] I
+la_oenb[125] I
+la_oenb[126] I
+la_oenb[127] I
+la_oenb[12] I
+la_oenb[13] I
+la_oenb[14] I
+la_oenb[15] I
+la_oenb[16] I
+la_oenb[17] I
+la_oenb[18] I
+la_oenb[19] I
+la_oenb[1] I
+la_oenb[20] I
+la_oenb[21] I
+la_oenb[22] I
+la_oenb[23] I
+la_oenb[24] I
+la_oenb[25] I
+la_oenb[26] I
+la_oenb[27] I
+la_oenb[28] I
+la_oenb[29] I
+la_oenb[2] I
+la_oenb[30] I
+la_oenb[31] I
+la_oenb[32] I
+la_oenb[33] I
+la_oenb[34] I
+la_oenb[35] I
+la_oenb[36] I
+la_oenb[37] I
+la_oenb[38] I
+la_oenb[39] I
+la_oenb[3] I
+la_oenb[40] I
+la_oenb[41] I
+la_oenb[42] I
+la_oenb[43] I
+la_oenb[44] I
+la_oenb[45] I
+la_oenb[46] I
+la_oenb[47] I
+la_oenb[48] I
+la_oenb[49] I
+la_oenb[4] I
+la_oenb[50] I
+la_oenb[51] I
+la_oenb[52] I
+la_oenb[53] I
+la_oenb[54] I
+la_oenb[55] I
+la_oenb[56] I
+la_oenb[57] I
+la_oenb[58] I
+la_oenb[59] I
+la_oenb[5] I
+la_oenb[60] I
+la_oenb[61] I
+la_oenb[62] I
+la_oenb[63] I
+la_oenb[64] I
+la_oenb[65] I
+la_oenb[66] I
+la_oenb[67] I
+la_oenb[68] I
+la_oenb[69] I
+la_oenb[6] I
+la_oenb[70] I
+la_oenb[71] I
+la_oenb[72] I
+la_oenb[73] I
+la_oenb[74] I
+la_oenb[75] I
+la_oenb[76] I
+la_oenb[77] I
+la_oenb[78] I
+la_oenb[79] I
+la_oenb[7] I
+la_oenb[80] I
+la_oenb[81] I
+la_oenb[82] I
+la_oenb[83] I
+la_oenb[84] I
+la_oenb[85] I
+la_oenb[86] I
+la_oenb[87] I
+la_oenb[88] I
+la_oenb[89] I
+la_oenb[8] I
+la_oenb[90] I
+la_oenb[91] I
+la_oenb[92] I
+la_oenb[93] I
+la_oenb[94] I
+la_oenb[95] I
+la_oenb[96] I
+la_oenb[97] I
+la_oenb[98] I
+la_oenb[99] I
+la_oenb[9] I
+user_clock2 I
+user_irq[0] O
+user_irq[1] O
+user_irq[2] O
+wb_clk_i I
+wb_rst_i I
+wbs_ack_o O
+wbs_adr_i[0] I
+wbs_adr_i[10] I
+wbs_adr_i[11] I
+wbs_adr_i[12] I
+wbs_adr_i[13] I
+wbs_adr_i[14] I
+wbs_adr_i[15] I
+wbs_adr_i[16] I
+wbs_adr_i[17] I
+wbs_adr_i[18] I
+wbs_adr_i[19] I
+wbs_adr_i[1] I
+wbs_adr_i[20] I
+wbs_adr_i[21] I
+wbs_adr_i[22] I
+wbs_adr_i[23] I
+wbs_adr_i[24] I
+wbs_adr_i[25] I
+wbs_adr_i[26] I
+wbs_adr_i[27] I
+wbs_adr_i[28] I
+wbs_adr_i[29] I
+wbs_adr_i[2] I
+wbs_adr_i[30] I
+wbs_adr_i[31] I
+wbs_adr_i[3] I
+wbs_adr_i[4] I
+wbs_adr_i[5] I
+wbs_adr_i[6] I
+wbs_adr_i[7] I
+wbs_adr_i[8] I
+wbs_adr_i[9] I
+wbs_cyc_i I
+wbs_dat_i[0] I
+wbs_dat_i[10] I
+wbs_dat_i[11] I
+wbs_dat_i[12] I
+wbs_dat_i[13] I
+wbs_dat_i[14] I
+wbs_dat_i[15] I
+wbs_dat_i[16] I
+wbs_dat_i[17] I
+wbs_dat_i[18] I
+wbs_dat_i[19] I
+wbs_dat_i[1] I
+wbs_dat_i[20] I
+wbs_dat_i[21] I
+wbs_dat_i[22] I
+wbs_dat_i[23] I
+wbs_dat_i[24] I
+wbs_dat_i[25] I
+wbs_dat_i[26] I
+wbs_dat_i[27] I
+wbs_dat_i[28] I
+wbs_dat_i[29] I
+wbs_dat_i[2] I
+wbs_dat_i[30] I
+wbs_dat_i[31] I
+wbs_dat_i[3] I
+wbs_dat_i[4] I
+wbs_dat_i[5] I
+wbs_dat_i[6] I
+wbs_dat_i[7] I
+wbs_dat_i[8] I
+wbs_dat_i[9] I
+wbs_dat_o[0] O
+wbs_dat_o[10] O
+wbs_dat_o[11] O
+wbs_dat_o[12] O
+wbs_dat_o[13] O
+wbs_dat_o[14] O
+wbs_dat_o[15] O
+wbs_dat_o[16] O
+wbs_dat_o[17] O
+wbs_dat_o[18] O
+wbs_dat_o[19] O
+wbs_dat_o[1] O
+wbs_dat_o[20] O
+wbs_dat_o[21] O
+wbs_dat_o[22] O
+wbs_dat_o[23] O
+wbs_dat_o[24] O
+wbs_dat_o[25] O
+wbs_dat_o[26] O
+wbs_dat_o[27] O
+wbs_dat_o[28] O
+wbs_dat_o[29] O
+wbs_dat_o[2] O
+wbs_dat_o[30] O
+wbs_dat_o[31] O
+wbs_dat_o[3] O
+wbs_dat_o[4] O
+wbs_dat_o[5] O
+wbs_dat_o[6] O
+wbs_dat_o[7] O
+wbs_dat_o[8] O
+wbs_dat_o[9] O
+wbs_sel_i[0] I
+wbs_sel_i[1] I
+wbs_sel_i[2] I
+wbs_sel_i[3] I
+wbs_stb_i I
+wbs_we_i I
+
+*D_NET *144 0.0861471
+*CONN
+*P la_data_in[0] I
+*I *646:csb0 I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_in[0] 0.000901532
+2 *646:csb0 0.000666772
+3 *144:11 0.0215978
+4 *144:10 0.020931
+5 *144:8 0.00979163
+6 *144:7 0.0106932
+7 *144:7 *600:11 0.000235374
+8 *144:8 *579:8 0.0213299
+9 *144:11 *554:11 0
+10 *144:11 *582:5 0
+*RES
+1 la_data_in[0] *144:7 31.7845 
+2 *144:7 *144:8 360.107 
+3 *144:8 *144:10 4.5 
+4 *144:10 *144:11 585.884 
+5 *144:11 *646:csb0 5.67846 
+*END
+
+*D_NET *183 0.0980748
+*CONN
+*P la_data_in[1] I
+*I *646:csb1 I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_in[1] 0.000101807
+2 *646:csb1 0.000116979
+3 *183:17 0.0268888
+4 *183:16 0.0267718
+5 *183:14 0.00820742
+6 *183:13 0.00820742
+7 *183:11 0.00491715
+8 *183:9 0.00504228
+9 *183:7 0.00374324
+10 *183:5 0.00371992
+11 *183:7 *318:15 0
+12 *183:11 *317:15 0.0101863
+13 *183:17 *332:23 0.000171682
+14 *183:17 *528:36 0
+*RES
+1 la_data_in[1] *183:5 2.89455 
+2 *183:5 *183:7 99.2208 
+3 *183:7 *183:9 3.54186 
+4 *183:9 *183:11 189.514 
+5 *183:11 *183:13 4.5 
+6 *183:13 *183:14 219.237 
+7 *183:14 *183:16 4.5 
+8 *183:16 *183:17 755.722 
+9 *183:17 *646:csb1 3.67641 
+*END
+
+*D_NET *272 0.0749467
+*CONN
+*P la_data_out[0] O
+*I *646:dout0[0] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[0] 0.00553104
+2 *646:dout0[0] 0.000933234
+3 *272:20 0.00553104
+4 *272:18 0.00669966
+5 *272:17 0.00669966
+6 *272:15 0.00718553
+7 *272:14 0.00811876
+8 la_data_out[0] *316:15 0.0124778
+9 *272:14 *646:din0[5] 0.000638154
+10 *272:14 *646:din0[6] 0.000928115
+11 *272:15 *311:15 0
+12 *272:15 *605:15 0.0202037
+*RES
+1 *646:dout0[0] *272:14 8.23351 
+2 *272:14 *272:15 326.352 
+3 *272:15 *272:17 4.5 
+4 *272:17 *272:18 175.424 
+5 *272:18 *272:20 4.5 
+6 *272:20 la_data_out[0] 229.512 
+*END
+
+*D_NET *283 0.0664527
+*CONN
+*P la_data_out[10] O
+*I *646:dout0[10] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[10] 0.000101807
+2 *646:dout0[10] 0.000969048
+3 *283:25 0.00372521
+4 *283:23 0.00374797
+5 *283:21 0.0161498
+6 *283:20 0.0160252
+7 *283:18 0.0116835
+8 *283:17 0.0126525
+9 *283:17 *646:din0[16] 0.000504243
+10 *283:17 *646:din0[17] 0.000893486
+11 *283:17 *585:15 0
+*RES
+1 *646:dout0[10] *283:17 22.4554 
+2 *283:17 *283:18 312.965 
+3 *283:18 *283:20 4.5 
+4 *283:20 *283:21 450.707 
+5 *283:21 *283:23 3.54186 
+6 *283:23 *283:25 99.2208 
+7 *283:25 la_data_out[10] 2.89455 
+*END
+
+*D_NET *294 0.0876965
+*CONN
+*P la_data_out[11] O
+*I *646:dout0[11] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[11] 0.00129896
+2 *646:dout0[11] 0.00114904
+3 *294:18 0.0108179
+4 *294:17 0.00951894
+5 *294:15 0.0131786
+6 *294:14 0.0143276
+7 *294:14 *646:din0[17] 5.11255e-05
+8 *294:14 *646:din0[18] 0.000803555
+9 *294:15 *586:11 0.0138092
+10 *294:15 *596:11 0.00366057
+11 *294:18 *319:18 0.0189716
+12 *294:18 *586:8 0.000109427
+*RES
+1 *646:dout0[11] *294:14 8.1007 
+2 *294:14 *294:15 519.859 
+3 *294:15 *294:17 4.5 
+4 *294:17 *294:18 327.94 
+5 *294:18 la_data_out[11] 40.5048 
+*END
+
+*D_NET *303 0.0958584
+*CONN
+*P la_data_out[12] O
+*I *646:dout0[12] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[12] 0.00161906
+2 *646:dout0[12] 0.00101605
+3 *303:18 0.0108556
+4 *303:17 0.0092365
+5 *303:15 0.0128618
+6 *303:14 0.0138779
+7 *303:14 *646:din0[18] 0.000142243
+8 *303:14 *646:din0[19] 0.000927214
+9 *303:15 *588:13 0.024859
+10 *303:18 *321:18 0.0204631
+*RES
+1 *646:dout0[12] *303:14 8.14693 
+2 *303:14 *303:15 511.139 
+3 *303:15 *303:17 4.5 
+4 *303:17 *303:18 340.695 
+5 *303:18 la_data_out[12] 49.2251 
+*END
+
+*D_NET *304 0.071524
+*CONN
+*P la_data_out[13] O
+*I *646:dout0[13] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[13] 0.000101807
+2 *646:dout0[13] 0.00101162
+3 *304:27 0.00369143
+4 *304:25 0.00363516
+5 *304:23 0.0157634
+6 *304:22 0.0157179
+7 *304:20 0.0129886
+8 *304:19 0.0140002
+9 *304:19 *646:din0[19] 0
+10 *304:19 *646:din0[20] 2.43027e-05
+11 *304:19 *646:din0[21] 0.00140831
+12 *304:19 *305:17 0.00231245
+13 *304:19 *589:17 0.000843473
+14 *304:19 *590:15 2.5386e-05
+*RES
+1 *646:dout0[13] *304:19 28.8191 
+2 *304:19 *304:20 350.124 
+3 *304:20 *304:22 4.5 
+4 *304:22 *304:23 442.402 
+5 *304:23 *304:25 1.29461 
+6 *304:25 *304:27 99.2208 
+7 *304:27 la_data_out[13] 2.89455 
+*END
+
+*D_NET *305 0.071334
+*CONN
+*P la_data_out[14] O
+*I *646:dout0[14] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[14] 0.0190043
+2 *646:dout0[14] 0.00141373
+3 *305:20 0.0190043
+4 *305:18 0.013916
+5 *305:17 0.0153297
+6 *305:17 *646:din0[20] 2.90182e-05
+7 *305:17 *646:din0[21] 7.39821e-05
+8 *305:17 *589:17 0.000250402
+9 *304:19 *305:17 0.00231245
+*RES
+1 *646:dout0[14] *305:17 33.8386 
+2 *305:17 *305:18 375.635 
+3 *305:18 *305:20 4.5 
+4 *305:20 la_data_out[14] 533.062 
+*END
+
+*D_NET *306 0.0716521
+*CONN
+*P la_data_out[15] O
+*I *646:dout0[15] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[15] 0.00358662
+2 *646:dout0[15] 0.00192074
+3 *306:23 0.00377047
+4 *306:21 0.0153017
+5 *306:20 0.0151178
+6 *306:18 0.0145867
+7 *306:17 0.0165075
+8 *306:17 *646:din0[21] 0.000145855
+9 *306:17 *646:din0[22] 0.000714689
+10 *306:17 *590:15 0
+11 *306:17 *591:17 0
+*RES
+1 *646:dout0[15] *306:17 42.1302 
+2 *306:17 *306:18 385.618 
+3 *306:18 *306:20 4.5 
+4 *306:20 *306:21 425.792 
+5 *306:21 *306:23 5.22729 
+6 *306:23 la_data_out[15] 99.1354 
+*END
+
+*D_NET *307 0.0884461
+*CONN
+*P la_data_out[16] O
+*I *646:dout0[16] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[16] 0.0025025
+2 *646:dout0[16] 0.000986063
+3 *307:20 0.0025025
+4 *307:18 0.0146727
+5 *307:17 0.0146727
+6 *307:15 0.0125668
+7 *307:14 0.0135528
+8 *307:14 *646:din0[22] 0
+9 *307:14 *646:din0[23] 0.000929355
+10 *307:15 *592:17 0.0260607
+11 *307:15 *597:5 0
+*RES
+1 *646:dout0[16] *307:14 7.74598 
+2 *307:14 *307:15 485.393 
+3 *307:15 *307:17 4.5 
+4 *307:17 *307:18 401.147 
+5 *307:18 *307:20 4.5 
+6 *307:20 la_data_out[16] 69.6402 
+*END
+
+*D_NET *308 0.10543
+*CONN
+*P la_data_out[17] O
+*I *646:dout0[17] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[17] 0.000101807
+2 *646:dout0[17] 0.0010508
+3 *308:21 0.00293546
+4 *308:20 0.00283365
+5 *308:18 0.00894841
+6 *308:17 0.00894841
+7 *308:15 0.0121538
+8 *308:14 0.0132046
+9 *308:14 *646:din0[23] 0
+10 *308:14 *646:din0[24] 0.00167939
+11 *308:15 *593:21 0.0136901
+12 *308:15 *599:11 0.00127656
+13 *308:18 *309:18 0.0381887
+14 *308:18 *546:8 0.000306578
+15 *308:18 *593:18 0.000111708
+*RES
+1 *646:dout0[17] *308:14 7.87626 
+2 *308:14 *308:15 476.258 
+3 *308:15 *308:17 4.5 
+4 *308:17 *308:18 411.685 
+5 *308:18 *308:20 4.5 
+6 *308:20 *308:21 78.8613 
+7 *308:21 la_data_out[17] 2.89455 
+*END
+
+*D_NET *309 0.124967
+*CONN
+*P la_data_out[18] O
+*I *646:dout0[18] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[18] 8.20467e-05
+2 *646:dout0[18] 0.000994219
+3 *309:21 0.00289426
+4 *309:20 0.00281222
+5 *309:18 0.00664572
+6 *309:17 0.00664572
+7 *309:15 0.0123268
+8 *309:14 0.013321
+9 *309:14 *646:din0[24] 0
+10 *309:14 *646:din0[25] 0.00109594
+11 *309:15 *548:13 0
+12 *309:15 *594:15 0.0217368
+13 *309:18 *546:8 0.0182241
+14 *308:18 *309:18 0.0381887
+*RES
+1 *646:dout0[18] *309:14 7.8418 
+2 *309:14 *309:15 477.503 
+3 *309:15 *309:17 4.5 
+4 *309:17 *309:18 424.995 
+5 *309:18 *309:20 4.5 
+6 *309:20 *309:21 78.446 
+7 *309:21 la_data_out[18] 2.33274 
+*END
+
+*D_NET *310 0.119116
+*CONN
+*P la_data_out[19] O
+*I *646:dout0[19] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[19] 0.000881777
+2 *646:dout0[19] 0.00104724
+3 *310:21 0.00341157
+4 *310:20 0.0025298
+5 *310:18 0.0106393
+6 *310:17 0.0106393
+7 *310:15 0.0117581
+8 *310:14 0.0128054
+9 la_data_out[19] *528:8 0.000665463
+10 *310:14 *646:din0[25] 0.000395466
+11 *310:14 *646:din0[26] 0.000929411
+12 *310:15 *595:11 0.0269863
+13 *310:18 *318:18 0.0343848
+14 *310:18 *547:8 0.00204228
+*RES
+1 *646:dout0[19] *310:14 8.13685 
+2 *310:14 *310:15 468.783 
+3 *310:15 *310:17 4.5 
+4 *310:17 *310:18 433.314 
+5 *310:18 *310:20 4.5 
+6 *310:20 *310:21 67.8571 
+7 *310:21 la_data_out[19] 35.7734 
+*END
+
+*D_NET *311 0.0733445
+*CONN
+*P la_data_out[1] O
+*I *646:dout0[1] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[1] 0.00362035
+2 *646:dout0[1] 0.00183718
+3 *311:23 0.0038042
+4 *311:21 0.0094007
+5 *311:20 0.00921685
+6 *311:18 0.00723796
+7 *311:17 0.00723796
+8 *311:15 0.00183718
+9 la_data_out[1] *318:15 0
+10 la_data_out[1] *319:15 0
+11 *311:15 *646:din0[6] 0
+12 *311:15 *646:din0[7] 0.000929216
+13 *311:15 *322:15 0
+14 *311:15 *577:11 0.00237546
+15 *311:15 *605:15 0
+16 *311:21 *318:15 0.0258474
+17 *272:15 *311:15 0
+*RES
+1 *646:dout0[1] *311:15 47.4231 
+2 *311:15 *311:17 4.5 
+3 *311:17 *311:18 188.179 
+4 *311:18 *311:20 4.5 
+5 *311:20 *311:21 417.072 
+6 *311:21 *311:23 5.22729 
+7 *311:23 la_data_out[1] 99.1354 
+*END
+
+*D_NET *312 0.120725
+*CONN
+*P la_data_out[20] O
+*I *646:dout0[20] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[20] 0.0034286
+2 *646:dout0[20] 0.000973598
+3 *312:20 0.0034286
+4 *312:18 0.00991757
+5 *312:17 0.00991757
+6 *312:15 0.0102376
+7 *312:14 0.0112112
+8 *312:14 *646:din0[27] 0.000707903
+9 *312:14 *646:din0[28] 0.000239546
+10 *312:15 *596:17 0.028439
+11 *312:15 *597:15 1.72594e-05
+12 *312:18 *313:18 0.0421414
+13 *312:18 *596:14 6.50727e-05
+14 *312:18 *599:16 0
+*RES
+1 *646:dout0[20] *312:14 7.81155 
+2 *312:14 *312:15 460.478 
+3 *312:15 *312:17 4.5 
+4 *312:17 *312:18 453.28 
+5 *312:18 *312:20 4.5 
+6 *312:20 la_data_out[20] 95.3859 
+*END
+
+*D_NET *313 0.12217
+*CONN
+*P la_data_out[21] O
+*I *646:dout0[21] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[21] 0.00341387
+2 *646:dout0[21] 0.00111409
+3 *313:20 0.00341387
+4 *313:18 0.010422
+5 *313:17 0.010422
+6 *313:15 0.0102635
+7 *313:14 0.0113776
+8 *313:14 *646:din0[28] 0.000751793
+9 *313:14 *646:din0[29] 0.000634966
+10 *313:15 *599:17 0.0282148
+11 *312:18 *313:18 0.0421414
+*RES
+1 *646:dout0[21] *313:14 8.13851 
+2 *313:14 *313:15 460.063 
+3 *313:15 *313:17 4.5 
+4 *313:17 *313:18 466.59 
+5 *313:18 *313:20 4.5 
+6 *313:20 la_data_out[21] 94.9706 
+*END
+
+*D_NET *314 0.113151
+*CONN
+*P la_data_out[22] O
+*I *646:dout0[22] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[22] 0.00355252
+2 *646:dout0[22] 0.00114611
+3 *314:23 0.00391427
+4 *314:18 0.0107652
+5 *314:17 0.0104035
+6 *314:15 0.0115649
+7 *314:14 0.012711
+8 *314:14 *646:din0[29] 0.000656566
+9 *314:14 *646:din0[30] 0.000637106
+10 *314:15 *600:11 0.0135713
+11 *314:18 *315:18 0.0442288
+*RES
+1 *646:dout0[22] *314:14 8.18475 
+2 *314:14 *314:15 451.342 
+3 *314:15 *314:17 4.5 
+4 *314:17 *314:18 474.909 
+5 *314:18 *314:23 14.4538 
+6 *314:23 la_data_out[22] 99.1354 
+*END
+
+*D_NET *315 0.12523
+*CONN
+*P la_data_out[23] O
+*I *646:dout0[23] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[23] 0.00355252
+2 *646:dout0[23] 0.000976592
+3 *315:23 0.00375277
+4 *315:18 0.0112104
+5 *315:17 0.0110101
+6 *315:15 0.0100544
+7 *315:14 0.011031
+8 *315:14 *646:din0[30] 0.000698907
+9 *315:14 *646:din0[31] 0.000623389
+10 *315:14 *316:14 0.000116217
+11 *315:15 *316:15 0.0279753
+12 *314:18 *315:18 0.0442288
+*RES
+1 *646:dout0[23] *315:14 8.12423 
+2 *315:14 *315:15 452.588 
+3 *315:15 *315:17 4.5 
+4 *315:17 *315:18 492.102 
+5 *315:18 *315:23 10.1059 
+6 *315:23 la_data_out[23] 99.1354 
+*END
+
+*D_NET *316 0.103482
+*CONN
+*P la_data_out[24] O
+*I *646:dout0[24] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[24] 0.00098492
+2 *646:dout0[24] 0.000792987
+3 *316:18 0.0197432
+4 *316:17 0.0187583
+5 *316:15 0.0100734
+6 *316:14 0.0108663
+7 *316:14 *646:din0[31] 0.00169322
+8 *316:14 *317:14 0
+9 la_data_out[0] *316:15 0.0124778
+10 *315:14 *316:14 0.000116217
+11 *315:15 *316:15 0.0279753
+*RES
+1 *646:dout0[24] *316:14 7.52323 
+2 *316:14 *316:15 527.749 
+3 *316:15 *316:17 4.5 
+4 *316:17 *316:18 514.286 
+5 *316:18 la_data_out[24] 31.7845 
+*END
+
+*D_NET *317 0.12971
+*CONN
+*P la_data_out[25] O
+*I *646:dout0[25] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[25] 8.20467e-05
+2 *646:dout0[25] 0.00168263
+3 *317:21 0.00409775
+4 *317:20 0.00401571
+5 *317:18 0.00966213
+6 *317:17 0.00966213
+7 *317:15 0.0142679
+8 *317:14 0.0159505
+9 *317:14 *318:14 0
+10 *317:18 *320:18 0.047403
+11 *317:18 *549:14 0.0126997
+12 *183:11 *317:15 0.0101863
+13 *316:14 *317:14 0
+*RES
+1 *646:dout0[25] *317:14 8.31247 
+2 *317:14 *317:15 443.037 
+3 *317:15 *317:17 4.5 
+4 *317:17 *317:18 524.824 
+5 *317:18 *317:20 4.5 
+6 *317:20 *317:21 112.081 
+7 *317:21 la_data_out[25] 2.33274 
+*END
+
+*D_NET *318 0.130131
+*CONN
+*P la_data_out[26] O
+*I *646:dout0[26] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[26] 0.000903446
+2 *646:dout0[26] 0.00116339
+3 *318:21 0.0033882
+4 *318:20 0.00248476
+5 *318:18 0.0132856
+6 *318:17 0.0132856
+7 *318:15 0.0111025
+8 *318:14 0.0122659
+9 la_data_out[26] *324:24 0.000665463
+10 *318:14 *319:14 0
+11 *318:18 *547:8 0.0113541
+12 la_data_out[1] *318:15 0
+13 *183:7 *318:15 0
+14 *310:18 *318:18 0.0343848
+15 *311:21 *318:15 0.0258474
+16 *317:14 *318:14 0
+*RES
+1 *646:dout0[26] *318:14 7.55685 
+2 *318:14 *318:15 468.368 
+3 *318:15 *318:17 4.5 
+4 *318:17 *318:18 533.143 
+5 *318:18 *318:20 4.5 
+6 *318:20 *318:21 67.0266 
+7 *318:21 la_data_out[26] 36.1886 
+*END
+
+*D_NET *319 0.0969039
+*CONN
+*P la_data_out[27] O
+*I *646:dout0[27] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[27] 0.00127719
+2 *646:dout0[27] 0.00117862
+3 *319:18 0.0191637
+4 *319:17 0.0178865
+5 *319:15 0.0186238
+6 *319:14 0.0198025
+7 *319:14 *320:14 0
+8 la_data_out[1] *319:15 0
+9 *294:18 *319:18 0.0189716
+10 *318:14 *319:14 0
+*RES
+1 *646:dout0[27] *319:14 7.57282 
+2 *319:14 *319:15 519.444 
+3 *319:15 *319:17 4.5 
+4 *319:17 *319:18 553.109 
+5 *319:18 la_data_out[27] 40.0896 
+*END
+
+*D_NET *320 0.115803
+*CONN
+*P la_data_out[28] O
+*I *646:dout0[28] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[28] 0.00397802
+2 *646:dout0[28] 0.00122176
+3 *320:20 0.00397802
+4 *320:18 0.0131185
+5 *320:17 0.0131185
+6 *320:15 0.015824
+7 *320:14 0.0170457
+8 *320:14 *321:14 0.000115375
+9 *317:18 *320:18 0.047403
+10 *319:14 *320:14 0
+*RES
+1 *646:dout0[28] *320:14 7.70644 
+2 *320:14 *320:15 443.453 
+3 *320:15 *320:17 4.5 
+4 *320:17 *320:18 566.419 
+5 *320:18 *320:20 4.5 
+6 *320:20 la_data_out[28] 111.581 
+*END
+
+*D_NET *321 0.114462
+*CONN
+*P la_data_out[29] O
+*I *646:dout0[29] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[29] 0.00159088
+2 *646:dout0[29] 0.00125673
+3 *321:18 0.0194482
+4 *321:17 0.0178573
+5 *321:15 0.0121625
+6 *321:14 0.0134192
+7 *321:14 *323:14 0
+8 *321:15 *322:21 0.0281488
+9 *303:18 *321:18 0.0204631
+10 *320:14 *321:14 0.000115375
+*RES
+1 *646:dout0[29] *321:14 7.90232 
+2 *321:14 *321:15 510.724 
+3 *321:15 *321:17 4.5 
+4 *321:17 *321:18 579.175 
+5 *321:18 la_data_out[29] 48.8099 
+*END
+
+*D_NET *322 0.0753574
+*CONN
+*P la_data_out[2] O
+*I *646:dout0[2] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[2] 6.22868e-05
+2 *646:dout0[2] 0.00123711
+3 *322:21 0.0118134
+4 *322:20 0.0117511
+5 *322:18 0.0079983
+6 *322:17 0.0079983
+7 *322:15 0.00152724
+8 *322:14 0.00276435
+9 *322:14 *646:din0[7] 0.000403473
+10 *322:14 *646:din0[8] 6.71996e-05
+11 *322:15 *646:din0[9] 1.66771e-05
+12 *322:15 *577:11 0
+13 *322:15 *606:15 0.00156913
+14 *311:15 *322:15 0
+15 *321:15 *322:21 0.0281488
+*RES
+1 *646:dout0[2] *322:14 7.55349 
+2 *322:14 *322:15 55.6072 
+3 *322:15 *322:17 4.5 
+4 *322:17 *322:18 208.7 
+5 *322:18 *322:20 4.5 
+6 *322:20 *322:21 499.512 
+7 *322:21 la_data_out[2] 1.77093 
+*END
+
+*D_NET *323 0.0863541
+*CONN
+*P la_data_out[30] O
+*I *646:dout0[30] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[30] 0.00352566
+2 *646:dout0[30] 0.00136495
+3 *323:23 0.00431011
+4 *323:18 0.0222106
+5 *323:17 0.0214261
+6 *323:15 0.0160758
+7 *323:14 0.0174408
+8 *323:14 *324:17 0
+9 *323:15 *324:17 0
+10 *321:14 *323:14 0
+*RES
+1 *646:dout0[30] *323:14 7.962 
+2 *323:14 *323:15 435.148 
+3 *323:15 *323:17 4.5 
+4 *323:17 *323:18 591.376 
+5 *323:18 *323:23 26.716 
+6 *323:23 la_data_out[30] 99.1354 
+*END
+
+*D_NET *324 0.107088
+*CONN
+*P la_data_out[31] O
+*I *646:dout0[31] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[31] 0.000697728
+2 *646:dout0[31] 0.00126194
+3 *324:24 0.00612453
+4 *324:23 0.0054268
+5 *324:21 0.0190265
+6 *324:20 0.0190265
+7 *324:18 0.0124888
+8 *324:17 0.0137507
+9 *324:17 *333:21 2.81678e-06
+10 *324:18 *548:16 0.00824464
+11 *324:24 *528:8 0.0203712
+12 la_data_out[26] *324:24 0.000665463
+13 *323:14 *324:17 0
+14 *323:15 *324:17 0
+*RES
+1 *646:dout0[31] *324:17 19.4528 
+2 *324:17 *324:18 381.736 
+3 *324:18 *324:20 4.5 
+4 *324:20 *324:21 535.016 
+5 *324:21 *324:23 4.5 
+6 *324:23 *324:24 227.002 
+7 *324:24 la_data_out[31] 23.8947 
+*END
+
+*D_NET *325 0.198555
+*CONN
+*P la_data_out[32] O
+*I *646:dout1[0] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[32] 8.3466e-05
+2 *646:dout1[0] 0.000456182
+3 *325:17 0.0396188
+4 *325:16 0.0395353
+5 *325:14 0.0208618
+6 *325:13 0.0213179
+7 *325:13 *326:17 0
+8 *325:14 *326:18 0.0766813
+9 *325:14 *335:18 0
+10 *325:14 *528:42 0
+11 *325:14 *573:14 0
+*RES
+1 *646:dout1[0] *325:13 17.0039 
+2 *325:13 *325:14 863.132 
+3 *325:14 *325:16 4.5 
+4 *325:16 *325:17 1074.64 
+5 *325:17 la_data_out[32] 2.33274 
+*END
+
+*D_NET *326 0.25228
+*CONN
+*P la_data_out[33] O
+*I *646:dout1[1] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[33] 0.000879875
+2 *646:dout1[1] 0.000481852
+3 *326:21 0.0383269
+4 *326:20 0.037447
+5 *326:18 0.0102172
+6 *326:17 0.0106991
+7 la_data_out[33] *528:8 0.000671329
+8 *326:17 *327:19 0
+9 *326:18 *328:18 0.0768754
+10 *326:18 *335:18 0
+11 *325:13 *326:17 0
+12 *325:14 *326:18 0.0766813
+*RES
+1 *646:dout1[1] *326:17 14.5609 
+2 *326:17 *326:18 871.451 
+3 *326:18 *326:20 4.5 
+4 *326:20 *326:21 1054.91 
+5 *326:21 la_data_out[33] 35.7734 
+*END
+
+*D_NET *327 0.236168
+*CONN
+*P la_data_out[34] O
+*I *646:dout1[2] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[34] 0.00364421
+2 *646:dout1[2] 0.000786404
+3 *327:25 0.0037742
+4 *327:23 0.0361914
+5 *327:22 0.0360614
+6 *327:20 0.0137369
+7 *327:19 0.0145233
+8 *327:19 *328:17 0
+9 *327:20 *329:18 0.0829789
+10 *327:20 *332:18 0.033716
+11 *327:20 *345:12 0.00809072
+12 *327:20 *359:14 0.00237629
+13 *327:20 *573:14 0.000288157
+14 *326:17 *327:19 0
+*RES
+1 *646:dout1[2] *327:19 12.0242 
+2 *327:19 *327:20 889.753 
+3 *327:20 *327:22 4.5 
+4 *327:22 *327:23 979.739 
+5 *327:23 *327:25 3.54186 
+6 *327:25 la_data_out[34] 99.1354 
+*END
+
+*D_NET *328 0.255616
+*CONN
+*P la_data_out[35] O
+*I *646:dout1[3] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[35] 0.0381075
+2 *646:dout1[3] 0.000464298
+3 *328:20 0.0381075
+4 *328:18 0.0111647
+5 *328:17 0.011629
+6 *328:17 *329:17 0
+7 *328:18 *331:18 0.0792674
+8 *328:18 *335:18 0
+9 *326:18 *328:18 0.0768754
+10 *327:19 *328:17 0
+*RES
+1 *646:dout1[3] *328:17 14.1927 
+2 *328:17 *328:18 906.946 
+3 *328:18 *328:20 4.5 
+4 *328:20 la_data_out[35] 1073.72 
+*END
+
+*D_NET *329 0.267872
+*CONN
+*P la_data_out[36] O
+*I *646:dout1[4] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[36] 0.000104086
+2 *646:dout1[4] 0.000750304
+3 *329:25 0.00375074
+4 *329:23 0.00371479
+5 *329:21 0.0360956
+6 *329:20 0.0360275
+7 *329:18 0.0065438
+8 *329:17 0.0072941
+9 *329:17 *330:19 0
+10 *329:18 *330:20 0.0862184
+11 *329:18 *345:12 0.00162206
+12 *329:18 *359:14 0.00257822
+13 *329:18 *573:14 0.000193986
+14 *327:20 *329:18 0.0829789
+15 *328:17 *329:17 0
+*RES
+1 *646:dout1[4] *329:17 11.5548 
+2 *329:17 *329:18 915.819 
+3 *329:18 *329:20 4.5 
+4 *329:20 *329:21 979.323 
+5 *329:21 *329:23 1.85642 
+6 *329:23 *329:25 99.2208 
+7 *329:25 la_data_out[36] 2.89455 
+*END
+
+*D_NET *330 0.270814
+*CONN
+*P la_data_out[37] O
+*I *646:dout1[5] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[37] 0.00351971
+2 *646:dout1[5] 0.000764679
+3 *330:25 0.00356581
+4 *330:23 0.0360509
+5 *330:22 0.0360048
+6 *330:20 0.00859645
+7 *330:19 0.00936112
+8 *330:19 *331:17 0
+9 *330:20 *335:18 0.0812365
+10 *330:20 *345:12 0.00174535
+11 *330:20 *359:14 0.00255219
+12 *330:20 *573:14 0.00119817
+13 *329:17 *330:19 0
+14 *329:18 *330:20 0.0862184
+*RES
+1 *646:dout1[5] *330:19 11.2374 
+2 *330:19 *330:20 933.012 
+3 *330:20 *330:22 4.5 
+4 *330:22 *330:23 978.908 
+5 *330:23 *330:25 1.29461 
+6 *330:25 la_data_out[37] 99.1354 
+*END
+
+*D_NET *331 0.263308
+*CONN
+*P la_data_out[38] O
+*I *646:dout1[6] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[38] 0.00364264
+2 *646:dout1[6] 0.000437529
+3 *331:23 0.00385283
+4 *331:21 0.0347801
+5 *331:20 0.0345699
+6 *331:18 0.0115637
+7 *331:17 0.0120012
+8 *331:17 *332:17 0
+9 *331:18 *334:18 0.0831923
+10 *331:18 *335:18 0
+11 *328:18 *331:18 0.0792674
+12 *330:19 *331:17 0
+*RES
+1 *646:dout1[6] *331:17 13.7304 
+2 *331:17 *331:18 941.886 
+3 *331:18 *331:20 4.5 
+4 *331:20 *331:21 974.34 
+5 *331:21 *331:23 5.7891 
+6 *331:23 la_data_out[38] 99.1354 
+*END
+
+*D_NET *332 0.177629
+*CONN
+*P la_data_out[39] O
+*I *646:dout1[7] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[39] 8.56182e-05
+2 *646:dout1[7] 0.000864602
+3 *332:27 0.0382214
+4 *332:26 0.0381358
+5 *332:24 0.0217598
+6 *332:23 0.0232891
+7 *332:18 0.00914078
+8 *332:17 0.00847611
+9 *332:17 *334:17 0
+10 *332:18 *345:12 0.00376759
+11 *332:23 *528:36 0
+12 *183:17 *332:23 0.000171682
+13 *327:20 *332:18 0.033716
+14 *331:17 *332:17 0
+*RES
+1 *646:dout1[7] *332:17 12.545 
+2 *332:17 *332:18 355.67 
+3 *332:18 *332:23 49.8657 
+4 *332:23 *332:24 603.578 
+5 *332:24 *332:26 4.5 
+6 *332:26 *332:27 1038.51 
+7 *332:27 la_data_out[39] 2.33274 
+*END
+
+*D_NET *333 0.0680231
+*CONN
+*P la_data_out[3] O
+*I *646:dout0[3] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[3] 0.000964176
+2 *646:dout0[3] 0.00125664
+3 *333:21 0.0208569
+4 *333:20 0.0198927
+5 *333:18 0.0063745
+6 *333:17 0.00763114
+7 la_data_out[3] *528:8 0.00095626
+8 *333:17 *646:din0[9] 0.000619275
+9 *333:17 *646:din0[10] 0
+10 *333:17 *344:15 4.51062e-05
+11 *333:17 *578:11 4.62112e-05
+12 *333:18 *548:16 0.0093773
+13 *324:17 *333:21 2.81678e-06
+*RES
+1 *646:dout0[3] *333:17 20.095 
+2 *333:17 *333:18 204.263 
+3 *333:18 *333:20 4.5 
+4 *333:20 *333:21 535.016 
+5 *333:21 la_data_out[3] 39.101 
+*END
+
+*D_NET *334 0.269587
+*CONN
+*P la_data_out[40] O
+*I *646:dout1[8] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[40] 0.000101807
+2 *646:dout1[8] 0.000434372
+3 *334:25 0.00362376
+4 *334:23 0.00366629
+5 *334:21 0.0346857
+6 *334:20 0.0345414
+7 *334:18 0.0116564
+8 *334:17 0.0120907
+9 *334:17 *335:17 0
+10 *334:18 *336:14 0.085594
+11 *331:18 *334:18 0.0831923
+12 *332:17 *334:17 0
+*RES
+1 *646:dout1[8] *334:17 13.3622 
+2 *334:17 *334:18 969.061 
+3 *334:18 *334:20 4.5 
+4 *334:20 *334:21 973.925 
+5 *334:21 *334:23 4.10367 
+6 *334:23 *334:25 99.2208 
+7 *334:25 la_data_out[40] 2.89455 
+*END
+
+*D_NET *335 0.234288
+*CONN
+*P la_data_out[41] O
+*I *646:dout1[9] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[41] 0.00364421
+2 *646:dout1[9] 0.000745773
+3 *335:23 0.0037742
+4 *335:21 0.0360911
+5 *335:20 0.0359611
+6 *335:18 0.0211862
+7 *335:17 0.021932
+8 *335:17 *336:13 0
+9 *335:18 *345:12 0.00250436
+10 *335:18 *359:14 0.00188764
+11 *335:18 *528:42 0.00358957
+12 *335:18 *573:14 0.021735
+13 *325:14 *335:18 0
+14 *326:18 *335:18 0
+15 *328:18 *335:18 0
+16 *330:20 *335:18 0.0812365
+17 *331:18 *335:18 0
+18 *334:17 *335:17 0
+*RES
+1 *646:dout1[9] *335:17 10.7545 
+2 *335:17 *335:18 987.363 
+3 *335:18 *335:20 4.5 
+4 *335:20 *335:21 978.493 
+5 *335:21 *335:23 3.54186 
+6 *335:23 la_data_out[41] 99.1354 
+*END
+
+*D_NET *336 0.214845
+*CONN
+*P la_data_out[42] O
+*I *646:dout1[10] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[42] 0.0394121
+2 *646:dout1[10] 0.00037417
+3 *336:16 0.0394121
+4 *336:14 0.0248394
+5 *336:13 0.0252135
+6 *336:13 *337:17 0
+7 *334:18 *336:14 0.085594
+8 *335:17 *336:13 0
+*RES
+1 *646:dout1[10] *336:13 14.9276 
+2 *336:13 *336:14 1004 
+3 *336:14 *336:16 4.5 
+4 *336:16 la_data_out[42] 1072.47 
+*END
+
+*D_NET *337 0.227054
+*CONN
+*P la_data_out[43] O
+*I *646:dout1[11] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[43] 0.000105677
+2 *646:dout1[11] 0.00112603
+3 *337:25 0.00362764
+4 *337:23 0.00358725
+5 *337:21 0.0351686
+6 *337:20 0.0351033
+7 *337:18 0.021606
+8 *337:17 0.022732
+9 *337:17 *338:17 0
+10 *337:18 *338:18 0.0951737
+11 *337:18 *356:12 0.0088235
+12 *336:13 *337:17 0
+*RES
+1 *646:dout1[11] *337:17 20.7273 
+2 *337:17 *337:18 1013.43 
+3 *337:18 *337:20 4.5 
+4 *337:20 *337:21 988.459 
+5 *337:21 *337:23 1.85642 
+6 *337:23 *337:25 99.2208 
+7 *337:25 la_data_out[43] 2.89455 
+*END
+
+*D_NET *338 0.298321
+*CONN
+*P la_data_out[44] O
+*I *646:dout1[12] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[44] 0.0036434
+2 *646:dout1[12] 0.00132528
+3 *338:23 0.00369091
+4 *338:21 0.0363976
+5 *338:20 0.0363501
+6 *338:18 0.00703563
+7 *338:17 0.00836091
+8 *338:17 *339:11 0
+9 *338:18 *340:18 0.0965503
+10 *338:18 *356:12 0.00979305
+11 *337:17 *338:17 0
+12 *337:18 *338:18 0.0951737
+*RES
+1 *646:dout1[12] *338:17 20.7046 
+2 *338:17 *338:18 1026.74 
+3 *338:18 *338:20 4.5 
+4 *338:20 *338:21 988.044 
+5 *338:21 *338:23 1.29461 
+6 *338:23 la_data_out[44] 99.1354 
+*END
+
+*D_NET *339 0.159691
+*CONN
+*P la_data_out[45] O
+*I *646:dout1[13] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[45] 0.00351895
+2 *646:dout1[13] 0.000228464
+3 *339:17 0.00372256
+4 *339:15 0.0345882
+5 *339:14 0.0343846
+6 *339:12 0.0415032
+7 *339:11 0.0417317
+8 *339:11 *340:17 0
+9 *339:12 *646:clk1 0
+10 *339:12 *346:13 4.51522e-06
+11 *339:12 *347:13 5.34749e-06
+12 *339:12 *348:13 3.89102e-06
+13 *339:12 *352:19 0
+14 *338:17 *339:11 0
+*RES
+1 *646:dout1[13] *339:11 1.30619 
+2 *339:11 *339:12 143.431 
+3 *339:12 *339:14 3.36879 
+4 *339:14 *339:15 969.98 
+5 *339:15 *339:17 5.7891 
+6 *339:17 la_data_out[45] 99.1354 
+*END
+
+*D_NET *340 0.304536
+*CONN
+*P la_data_out[46] O
+*I *646:dout1[14] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[46] 8.56182e-05
+2 *646:dout1[14] 0.00111017
+3 *340:21 0.0400504
+4 *340:20 0.0399648
+5 *340:18 0.00744813
+6 *340:17 0.0085583
+7 *340:17 *341:17 0
+8 *340:18 *341:18 0.0996555
+9 *340:18 *356:12 0.0111127
+10 *338:18 *340:18 0.0965503
+11 *339:11 *340:17 0
+*RES
+1 *646:dout1[14] *340:17 19.8901 
+2 *340:17 *340:18 1057.8 
+3 *340:18 *340:20 4.5 
+4 *340:20 *340:21 1086.68 
+5 *340:21 la_data_out[46] 2.33274 
+*END
+
+*D_NET *341 0.306783
+*CONN
+*P la_data_out[47] O
+*I *646:dout1[15] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[47] 0.000103957
+2 *646:dout1[15] 0.00110178
+3 *341:25 0.00362591
+4 *341:23 0.00366629
+5 *341:21 0.0351758
+6 *341:20 0.0350315
+7 *341:18 0.00711098
+8 *341:17 0.00821276
+9 *341:17 *342:17 0
+10 *341:18 *342:18 0.100585
+11 *341:18 *356:12 0.0125132
+12 *340:17 *341:17 0
+13 *340:18 *341:18 0.0996555
+*RES
+1 *646:dout1[15] *341:17 19.4983 
+2 *341:17 *341:18 1065.56 
+3 *341:18 *341:20 4.5 
+4 *341:20 *341:21 987.213 
+5 *341:21 *341:23 4.10367 
+6 *341:23 *341:25 99.2208 
+7 *341:25 la_data_out[47] 2.89455 
+*END
+
+*D_NET *342 0.311169
+*CONN
+*P la_data_out[48] O
+*I *646:dout1[16] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[48] 0.00364264
+2 *646:dout1[16] 0.00108396
+3 *342:23 0.00376863
+4 *342:21 0.0351344
+5 *342:20 0.0350084
+6 *342:18 0.00739234
+7 *342:17 0.0084763
+8 *342:17 *343:17 0
+9 *342:18 *343:18 0.102119
+10 *342:18 *356:12 0.0139574
+11 *341:17 *342:17 0
+12 *341:18 *342:18 0.100585
+*RES
+1 *646:dout1[16] *342:17 19.0663 
+2 *342:17 *342:18 1083.86 
+3 *342:18 *342:20 4.5 
+4 *342:20 *342:21 986.798 
+5 *342:21 *342:23 3.54186 
+6 *342:23 la_data_out[48] 99.1354 
+*END
+
+*D_NET *343 0.256981
+*CONN
+*P la_data_out[49] O
+*I *646:dout1[17] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[49] 0.000736473
+2 *646:dout1[17] 0.00106476
+3 *343:21 0.0388105
+4 *343:20 0.038074
+5 *343:18 0.0233697
+6 *343:17 0.0244345
+7 *343:17 *345:11 0
+8 *343:18 *356:12 0.0283717
+9 *342:17 *343:17 0
+10 *342:18 *343:18 0.102119
+*RES
+1 *646:dout1[17] *343:17 18.6611 
+2 *343:17 *343:18 1091.63 
+3 *343:18 *343:20 4.5 
+4 *343:20 *343:21 1073.18 
+5 *343:21 la_data_out[49] 29.2687 
+*END
+
+*D_NET *344 0.0651125
+*CONN
+*P la_data_out[4] O
+*I *646:dout0[4] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[4] 0.00363393
+2 *646:dout0[4] 0.000684437
+3 *344:23 0.00373874
+4 *344:21 0.00358286
+5 *344:20 0.00347804
+6 *344:18 0.00908351
+7 *344:17 0.00908351
+8 *344:15 0.00913533
+9 *344:14 0.00981976
+10 *344:14 *646:din0[10] 0.0016355
+11 *344:14 *646:din0[11] 0.000374136
+12 *344:15 *578:11 0.0108176
+13 *333:17 *344:15 4.51062e-05
+*RES
+1 *646:dout0[4] *344:14 7.33663 
+2 *344:14 *344:15 359.157 
+3 *344:15 *344:17 4.5 
+4 *344:17 *344:18 234.212 
+5 *344:18 *344:20 4.5 
+6 *344:20 *344:21 96.9125 
+7 *344:21 *344:23 2.98005 
+8 *344:23 la_data_out[4] 99.1354 
+*END
+
+*D_NET *345 0.203369
+*CONN
+*P la_data_out[50] O
+*I *646:dout1[18] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[50] 0.000101807
+2 *646:dout1[18] 0.000752255
+3 *345:19 0.00362376
+4 *345:17 0.00358725
+5 *345:15 0.034806
+6 *345:14 0.0347407
+7 *345:12 0.0425758
+8 *345:11 0.0433281
+9 *345:11 *346:13 0
+10 *345:12 *349:17 0.000546141
+11 *345:12 *350:17 0.000121638
+12 *345:12 *351:17 0.000695712
+13 *345:12 *352:19 3.6211e-05
+14 *345:12 *353:17 6.21462e-05
+15 *345:12 *354:17 0.000182281
+16 *345:12 *356:12 0
+17 *345:12 *357:17 3.27616e-06
+18 *345:12 *358:17 3.24663e-05
+19 *345:12 *359:14 0.0196049
+20 *345:12 *573:14 0.000838138
+21 *327:20 *345:12 0.00809072
+22 *329:18 *345:12 0.00162206
+23 *330:20 *345:12 0.00174535
+24 *332:18 *345:12 0.00376759
+25 *335:18 *345:12 0.00250436
+26 *343:17 *345:11 0
+*RES
+1 *646:dout1[18] *345:11 2.67784 
+2 *345:11 *345:12 153.145 
+3 *345:12 *345:14 3.36879 
+4 *345:14 *345:15 979.946 
+5 *345:15 *345:17 1.85642 
+6 *345:17 *345:19 99.2208 
+7 *345:19 la_data_out[50] 2.89455 
+*END
+
+*D_NET *346 0.233159
+*CONN
+*P la_data_out[51] O
+*I *646:dout1[19] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[51] 0.0036434
+2 *646:dout1[19] 0.000177312
+3 *346:19 0.00369091
+4 *346:17 0.0355284
+5 *346:16 0.0354809
+6 *346:14 0.0239735
+7 *346:13 0.0241508
+8 *346:13 *347:13 0
+9 *346:14 *347:14 0.106509
+10 *339:12 *346:13 4.51522e-06
+11 *345:11 *346:13 0
+*RES
+1 *646:dout1[19] *346:13 9.43834 
+2 *346:13 *346:14 1127.12 
+3 *346:14 *346:16 4.5 
+4 *346:16 *346:17 966.035 
+5 *346:17 *346:19 1.29461 
+6 *346:19 la_data_out[51] 99.1354 
+*END
+
+*D_NET *347 0.305255
+*CONN
+*P la_data_out[52] O
+*I *646:dout1[20] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[52] 0.00351895
+2 *646:dout1[20] 0.000212994
+3 *347:19 0.00372256
+4 *347:17 0.0344205
+5 *347:16 0.0342169
+6 *347:14 0.00751806
+7 *347:13 0.00773105
+8 *347:13 *348:13 0
+9 *347:14 *348:14 0.107399
+10 *339:12 *347:13 5.34749e-06
+11 *346:13 *347:13 0
+12 *346:14 *347:14 0.106509
+*RES
+1 *646:dout1[20] *347:13 9.86689 
+2 *347:13 *347:14 1137.11 
+3 *347:14 *347:16 4.5 
+4 *347:16 *347:17 965.62 
+5 *347:17 *347:19 5.7891 
+6 *347:19 la_data_out[52] 99.1354 
+*END
+
+*D_NET *348 0.233134
+*CONN
+*P la_data_out[53] O
+*I *646:dout1[21] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[53] 8.20467e-05
+2 *646:dout1[21] 0.000235581
+3 *348:17 0.0377965
+4 *348:16 0.0377145
+5 *348:14 0.0248336
+6 *348:13 0.0250692
+7 *348:13 *349:17 0
+8 *339:12 *348:13 3.89102e-06
+9 *347:13 *348:13 0
+10 *347:14 *348:14 0.107399
+*RES
+1 *646:dout1[21] *348:13 10.2589 
+2 *348:13 *348:14 1154.85 
+3 *348:14 *348:16 4.5 
+4 *348:16 *348:17 1064.25 
+5 *348:17 la_data_out[53] 2.33274 
+*END
+
+*D_NET *349 0.240632
+*CONN
+*P la_data_out[54] O
+*I *646:dout1[22] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[54] 0.000101807
+2 *646:dout1[22] 0.00154122
+3 *349:25 0.00362376
+4 *349:23 0.00366629
+5 *349:21 0.0355001
+6 *349:20 0.0353558
+7 *349:18 0.0245011
+8 *349:17 0.0260424
+9 *349:17 *350:17 0
+10 *349:18 *350:18 0.109753
+11 *345:12 *349:17 0.000546141
+12 *348:13 *349:17 0
+*RES
+1 *646:dout1[22] *349:17 27.4654 
+2 *349:17 *349:18 1158.74 
+3 *349:18 *349:20 4.5 
+4 *349:20 *349:21 996.764 
+5 *349:21 *349:23 4.10367 
+6 *349:23 *349:25 99.2208 
+7 *349:25 la_data_out[54] 2.89455 
+*END
+
+*D_NET *350 0.31759
+*CONN
+*P la_data_out[55] O
+*I *646:dout1[23] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[55] 0.00351895
+2 *646:dout1[23] 0.00145194
+3 *350:23 0.00364352
+4 *350:21 0.0354589
+5 *350:20 0.0353344
+6 *350:18 0.00800051
+7 *350:17 0.00945246
+8 *350:17 *351:17 0
+9 *350:18 *351:18 0.110855
+10 *345:12 *350:17 0.000121638
+11 *349:17 *350:17 0
+12 *349:18 *350:18 0.109753
+*RES
+1 *646:dout1[23] *350:17 26.5685 
+2 *350:17 *350:18 1179.81 
+3 *350:18 *350:20 4.5 
+4 *350:20 *350:21 996.349 
+5 *350:21 *350:23 3.54186 
+6 *350:23 la_data_out[55] 99.1354 
+*END
+
+*D_NET *351 0.321496
+*CONN
+*P la_data_out[56] O
+*I *646:dout1[24] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[56] 0.000897635
+2 *646:dout1[24] 0.00149146
+3 *351:21 0.0390444
+4 *351:20 0.0381468
+5 *351:18 0.00771524
+6 *351:17 0.0092067
+7 la_data_out[56] *528:8 0.000707431
+8 *351:17 *352:19 0.000395796
+9 *351:18 *352:20 0.11234
+10 *345:12 *351:17 0.000695712
+11 *350:17 *351:17 0
+12 *350:18 *351:18 0.110855
+*RES
+1 *646:dout1[24] *351:17 26.8576 
+2 *351:17 *351:18 1183.14 
+3 *351:18 *351:20 4.5 
+4 *351:20 *351:21 1075.67 
+5 *351:21 la_data_out[56] 36.328 
+*END
+
+*D_NET *352 0.323651
+*CONN
+*P la_data_out[57] O
+*I *646:dout1[25] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[57] 0.000101807
+2 *646:dout1[25] 0.00137128
+3 *352:27 0.00362376
+4 *352:25 0.00358725
+5 *352:23 0.0353553
+6 *352:22 0.03529
+7 *352:20 0.00808039
+8 *352:19 0.00945166
+9 *352:19 *353:17 0
+10 *352:20 *353:18 0.114018
+11 *339:12 *352:19 0
+12 *345:12 *352:19 3.6211e-05
+13 *351:17 *352:19 0.000395796
+14 *351:18 *352:20 0.11234
+*RES
+1 *646:dout1[25] *352:19 27.8869 
+2 *352:19 *352:20 1206.99 
+3 *352:20 *352:22 4.5 
+4 *352:22 *352:23 995.518 
+5 *352:23 *352:25 1.85642 
+6 *352:25 *352:27 99.2208 
+7 *352:27 la_data_out[57] 2.89455 
+*END
+
+*D_NET *353 0.326513
+*CONN
+*P la_data_out[58] O
+*I *646:dout1[26] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[58] 0.00351895
+2 *646:dout1[26] 0.00140724
+3 *353:23 0.00354472
+4 *353:21 0.0352935
+5 *353:20 0.0352677
+6 *353:18 0.00823187
+7 *353:17 0.00963911
+8 *353:17 *354:17 0
+9 *353:18 *354:18 0.11553
+10 *345:12 *353:17 6.21462e-05
+11 *352:19 *353:17 0
+12 *352:20 *353:18 0.114018
+*RES
+1 *646:dout1[26] *353:17 26.6551 
+2 *353:17 *353:18 1224.73 
+3 *353:18 *353:20 4.5 
+4 *353:20 *353:21 995.103 
+5 *353:21 *353:23 0.732798 
+6 *353:23 la_data_out[58] 99.1354 
+*END
+
+*D_NET *354 0.249143
+*CONN
+*P la_data_out[59] O
+*I *646:dout1[27] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[59] 0.00351895
+2 *646:dout1[27] 0.00145344
+3 *354:23 0.00372256
+4 *354:21 0.0354522
+5 *354:20 0.0352486
+6 *354:18 0.0262906
+7 *354:17 0.0277441
+8 *354:17 *356:11 0
+9 *345:12 *354:17 0.000182281
+10 *353:17 *354:17 0
+11 *353:18 *354:18 0.11553
+*RES
+1 *646:dout1[27] *354:17 26.3626 
+2 *354:17 *354:18 1232.5 
+3 *354:18 *354:20 4.5 
+4 *354:20 *354:21 994.688 
+5 *354:21 *354:23 5.7891 
+6 *354:23 la_data_out[59] 99.1354 
+*END
+
+*D_NET *355 0.0887114
+*CONN
+*P la_data_out[5] O
+*I *646:dout0[5] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[5] 0.000884268
+2 *646:dout0[5] 0.00133663
+3 *355:25 0.00912643
+4 *355:24 0.00824217
+5 *355:22 0.00574673
+6 *355:21 0.00574673
+7 *355:19 0.00766923
+8 *355:18 0.00900586
+9 la_data_out[5] *528:8 0.000657842
+10 *355:18 *646:din0[11] 0.00130994
+11 *355:18 *646:din0[12] 0
+12 *355:19 *579:11 0.017798
+13 *355:22 *377:18 0.0211876
+*RES
+1 *646:dout0[5] *355:18 8.37298 
+2 *355:18 *355:19 308.081 
+3 *355:19 *355:21 4.5 
+4 *355:21 *355:22 241.976 
+5 *355:22 *355:24 4.5 
+6 *355:24 *355:25 227.729 
+7 *355:25 la_data_out[5] 35.7734 
+*END
+
+*D_NET *356 0.266052
+*CONN
+*P la_data_out[60] O
+*I *646:dout1[28] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[60] 8.20467e-05
+2 *646:dout1[28] 0.00111287
+3 *356:15 0.0385564
+4 *356:14 0.0384744
+5 *356:12 0.051
+6 *356:11 0.0521129
+7 *356:11 *357:17 6.46839e-05
+8 *356:12 *357:17 8.62976e-06
+9 *356:12 *358:17 6.83165e-05
+10 *337:18 *356:12 0.0088235
+11 *338:18 *356:12 0.00979305
+12 *340:18 *356:12 0.0111127
+13 *341:18 *356:12 0.0125132
+14 *342:18 *356:12 0.0139574
+15 *343:18 *356:12 0.0283717
+16 *345:12 *356:12 0
+17 *354:17 *356:11 0
+*RES
+1 *646:dout1[28] *356:11 3.78726 
+2 *356:11 *356:12 172.268 
+3 *356:12 *356:14 3.36879 
+4 *356:14 *356:15 1085.64 
+5 *356:15 la_data_out[60] 2.33274 
+*END
+
+*D_NET *357 0.254487
+*CONN
+*P la_data_out[61] O
+*I *646:dout1[29] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[61] 0.000101807
+2 *646:dout1[29] 0.00170954
+3 *357:25 0.00362376
+4 *357:23 0.00366629
+5 *357:21 0.0357121
+6 *357:20 0.0355678
+7 *357:18 0.0267092
+8 *357:17 0.0284188
+9 *357:17 *358:17 0
+10 *357:18 *358:18 0.118901
+11 *345:12 *357:17 3.27616e-06
+12 *356:11 *357:17 6.46839e-05
+13 *356:12 *357:17 8.62976e-06
+*RES
+1 *646:dout1[29] *357:17 31.0715 
+2 *357:17 *357:18 1260.78 
+3 *357:18 *357:20 4.5 
+4 *357:20 *357:21 1003.82 
+5 *357:21 *357:23 4.10367 
+6 *357:23 *357:25 99.2208 
+7 *357:25 la_data_out[61] 2.89455 
+*END
+
+*D_NET *358 0.255447
+*CONN
+*P la_data_out[62] O
+*I *646:dout1[30] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[62] 0.00351895
+2 *646:dout1[30] 0.0017766
+3 *358:23 0.00364352
+4 *358:21 0.0356709
+5 *358:20 0.0355463
+6 *358:18 0.027256
+7 *358:17 0.0290326
+8 *358:17 *359:14 0
+9 *345:12 *358:17 3.24663e-05
+10 *356:12 *358:17 6.83165e-05
+11 *357:17 *358:17 0
+12 *357:18 *358:18 0.118901
+*RES
+1 *646:dout1[30] *358:17 30.9454 
+2 *358:17 *358:18 1275.76 
+3 *358:18 *358:20 4.5 
+4 *358:20 *358:21 1003.41 
+5 *358:21 *358:23 3.54186 
+6 *358:23 la_data_out[62] 99.1354 
+*END
+
+*D_NET *359 0.198178
+*CONN
+*P la_data_out[63] O
+*I *646:dout1[31] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[63] 0.000897635
+2 *646:dout1[31] 0.00522525
+3 *359:21 0.0209005
+4 *359:20 0.0200028
+5 *359:18 0.0399428
+6 *359:17 0.0399428
+7 *359:15 0.0176515
+8 *359:14 0.0228768
+9 la_data_out[63] *528:8 0.000707431
+10 *359:14 *646:addr1[0] 5.76913e-05
+11 *359:14 *646:clk1 0.000114563
+12 *359:14 *573:14 0.000858956
+13 *359:15 *528:36 0
+14 *359:15 *574:11 0
+15 *327:20 *359:14 0.00237629
+16 *329:18 *359:14 0.00257822
+17 *330:20 *359:14 0.00255219
+18 *335:18 *359:14 0.00188764
+19 *345:12 *359:14 0.0196049
+20 *358:17 *359:14 0
+*RES
+1 *646:dout1[31] *359:14 31.3109 
+2 *359:14 *359:15 494.529 
+3 *359:15 *359:17 4.5 
+4 *359:17 *359:18 1102.72 
+5 *359:18 *359:20 4.5 
+6 *359:20 *359:21 564.499 
+7 *359:21 la_data_out[63] 36.328 
+*END
+
+*D_NET *366 0.0650731
+*CONN
+*P la_data_out[6] O
+*I *646:dout0[6] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[6] 0.000101807
+2 *646:dout0[6] 0.000886571
+3 *366:25 0.00373874
+4 *366:23 0.00368247
+5 *366:21 0.00652608
+6 *366:20 0.00648055
+7 *366:18 0.00976269
+8 *366:17 0.00976269
+9 *366:15 0.00700752
+10 *366:14 0.00789409
+11 *366:14 *646:din0[12] 0.000829253
+12 *366:14 *646:din0[13] 0.000115375
+13 *366:15 *580:13 0.00828525
+*RES
+1 *646:dout0[6] *366:14 7.59719 
+2 *366:14 *366:15 274.86 
+3 *366:15 *366:17 4.5 
+4 *366:17 *366:18 258.614 
+5 *366:18 *366:20 4.5 
+6 *366:20 *366:21 181.209 
+7 *366:21 *366:23 1.29461 
+8 *366:23 *366:25 99.2208 
+9 *366:25 la_data_out[6] 2.89455 
+*END
+
+*D_NET *377 0.0941354
+*CONN
+*P la_data_out[7] O
+*I *646:dout0[7] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[7] 0.00661166
+2 *646:dout0[7] 0.000887762
+3 *377:20 0.00661166
+4 *377:18 0.00695491
+5 *377:17 0.00695491
+6 *377:15 0.00683611
+7 *377:14 0.00772387
+8 la_data_out[7] *546:11 0.0104161
+9 *377:14 *646:din0[13] 0.000707903
+10 *377:14 *646:din0[14] 0.000109709
+11 *377:15 *581:11 0.0191332
+12 *355:22 *377:18 0.0211876
+*RES
+1 *646:dout0[7] *377:14 7.6115 
+2 *377:14 *377:15 309.326 
+3 *377:15 *377:17 4.5 
+4 *377:17 *377:18 275.252 
+5 *377:18 *377:20 4.5 
+6 *377:20 la_data_out[7] 246.538 
+*END
+
+*D_NET *388 0.0748601
+*CONN
+*P la_data_out[8] O
+*I *646:dout0[8] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[8] 0.00362039
+2 *646:dout0[8] 0.00103745
+3 *388:23 0.00380425
+4 *388:21 0.00574103
+5 *388:20 0.00555718
+6 *388:18 0.0106527
+7 *388:17 0.0106527
+8 *388:15 0.00665068
+9 *388:14 0.00768813
+10 *388:14 *646:din0[14] 0.000838249
+11 *388:14 *646:din0[15] 0
+12 *388:15 *582:11 0.0186174
+*RES
+1 *646:dout0[8] *388:14 7.96872 
+2 *388:14 *388:15 301.021 
+3 *388:15 *388:17 4.5 
+4 *388:17 *388:18 283.571 
+5 *388:18 *388:20 4.5 
+6 *388:20 *388:21 155.878 
+7 *388:21 *388:23 5.22729 
+8 *388:23 la_data_out[8] 99.1354 
+*END
+
+*D_NET *399 0.0659751
+*CONN
+*P la_data_out[9] O
+*I *646:dout0[9] O *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 la_data_out[9] 0.00362039
+2 *646:dout0[9] 0.00107815
+3 *399:23 0.00366593
+4 *399:21 0.00589962
+5 *399:20 0.00585409
+6 *399:18 0.0114893
+7 *399:17 0.0114893
+8 *399:15 0.0101413
+9 *399:14 0.0112195
+10 *399:14 *646:din0[15] 0.000683551
+11 *399:14 *646:din0[16] 8.22964e-06
+12 *399:14 *646:din0[17] 0
+13 *399:15 *646:din0[16] 0.000322948
+14 *399:15 *646:din0[17] 0.000502815
+*RES
+1 *646:dout0[9] *399:14 8.0553 
+2 *399:14 *399:15 291.886 
+3 *399:15 *399:17 4.5 
+4 *399:17 *399:18 300.209 
+5 *399:18 *399:20 4.5 
+6 *399:20 *399:21 164.183 
+7 *399:21 *399:23 1.29461 
+8 *399:23 la_data_out[9] 99.1354 
+*END
+
+*D_NET *528 0.376476
+*CONN
+*P user_clock2 I
+*I *646:clk1 I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*I *646:clk0 I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 user_clock2 0.000676059
+2 *646:clk1 0.000726606
+3 *646:clk0 0.000877329
+4 *528:42 0.00172905
+5 *528:36 0.0192013
+6 *528:35 0.0181989
+7 *528:33 0.019943
+8 *528:13 0.0208203
+9 *528:11 0.0196253
+10 *528:10 0.0196253
+11 *528:8 0.106327
+12 *528:7 0.107003
+13 *528:8 *589:8 0.00204565
+14 *528:8 *593:10 0.000313327
+15 *528:8 *593:14 0.000882798
+16 *528:8 *595:8 0.00272113
+17 *528:8 *599:10 0.000657842
+18 *528:8 *600:10 0.00120333
+19 *528:8 *643:8 0.00451631
+20 *528:8 *643:14 0.000941217
+21 la_data_out[19] *528:8 0.000665463
+22 la_data_out[33] *528:8 0.000671329
+23 la_data_out[3] *528:8 0.00095626
+24 la_data_out[56] *528:8 0.000707431
+25 la_data_out[5] *528:8 0.000657842
+26 la_data_out[63] *528:8 0.000707431
+27 *183:17 *528:36 0
+28 *324:24 *528:8 0.0203712
+29 *325:14 *528:42 0
+30 *332:23 *528:36 0
+31 *335:18 *528:42 0.00358957
+32 *339:12 *646:clk1 0
+33 *359:14 *646:clk1 0.000114563
+34 *359:15 *528:36 0
+*RES
+1 user_clock2 *528:7 23.4795 
+2 *528:7 *528:8 3038.29 
+3 *528:8 *528:10 4.5 
+4 *528:10 *528:11 547.889 
+5 *528:11 *528:13 4.5 
+6 *528:13 *646:clk0 17.2728 
+7 *528:13 *528:33 541.462 
+8 *528:33 *528:35 4.5 
+9 *528:35 *528:36 510.516 
+10 *528:36 *528:42 49.4789 
+11 *528:42 *646:clk1 5.92885 
+*END
+
+*D_NET *543 0.0911205
+*CONN
+*P wbs_adr_i[0] I
+*I *646:addr0[0] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_adr_i[0] 0.00351235
+2 *646:addr0[0] 0.00115575
+3 *543:12 0.0144842
+4 *543:11 0.0133285
+5 *543:9 0.016125
+6 *543:7 0.0162891
+7 *543:5 0.00367645
+8 *646:addr0[0] *646:wmask0[0] 0
+9 *543:12 *576:14 0.0225491
+*RES
+1 wbs_adr_i[0] *543:5 99.1354 
+2 *543:5 *543:7 4.66548 
+3 *543:7 *543:9 455.275 
+4 *543:9 *543:11 4.5 
+5 *543:11 *543:12 466.036 
+6 *543:12 *646:addr0[0] 17.7338 
+*END
+
+*D_NET *544 0.190701
+*CONN
+*P wbs_adr_i[10] I
+*I *646:addr1[2] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_adr_i[10] 0.00191123
+2 *646:addr1[2] 0.000752732
+3 *544:11 0.00625676
+4 *544:10 0.00550403
+5 *544:8 0.0156403
+6 *544:7 0.0156403
+7 *544:5 0.00191123
+8 *646:addr1[2] *646:addr1[3] 0
+9 *544:8 *574:8 0.0679886
+10 *544:11 *545:13 0.0370471
+11 *544:11 *574:11 0.0380489
+*RES
+1 wbs_adr_i[10] *544:5 53.0301 
+2 *544:5 *544:7 4.5 
+3 *544:7 *544:8 718.935 
+4 *544:8 *544:10 4.5 
+5 *544:10 *544:11 614.121 
+6 *544:11 *646:addr1[2] 5.8913 
+*END
+
+*D_NET *545 0.139688
+*CONN
+*P wbs_adr_i[11] I
+*I *646:addr1[3] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_adr_i[11] 6.22868e-05
+2 *646:addr1[3] 0.00078529
+3 *545:13 0.0140056
+4 *545:12 0.0132203
+5 *545:10 0.0227101
+6 *545:9 0.0227101
+7 *545:7 0.00220567
+8 *545:5 0.00226795
+9 *545:10 *580:10 0.0246735
+10 *646:addr1[2] *646:addr1[3] 0
+11 *544:11 *545:13 0.0370471
+*RES
+1 wbs_adr_i[11] *545:5 1.77093 
+2 *545:5 *545:7 61.0054 
+3 *545:7 *545:9 4.5 
+4 *545:9 *545:10 700.079 
+5 *545:10 *545:12 4.5 
+6 *545:12 *545:13 597.927 
+7 *545:13 *646:addr1[3] 5.96779 
+*END
+
+*D_NET *546 0.107801
+*CONN
+*P wbs_adr_i[12] I
+*I *646:addr1[4] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_adr_i[12] 0.00282157
+2 *646:addr1[4] 0.000775811
+3 *546:11 0.0155338
+4 *546:10 0.014758
+5 *546:8 0.017708
+6 *546:7 0.017708
+7 *546:5 0.00282157
+8 *646:addr1[4] *646:addr1[5] 1.48618e-05
+9 *646:addr1[4] *646:addr1[6] 0.00139203
+10 *646:addr1[4] *646:addr1[7] 0.000152831
+11 *546:8 *593:18 0.00516804
+12 la_data_out[7] *546:11 0.0104161
+13 *308:18 *546:8 0.000306578
+14 *309:18 *546:8 0.0182241
+*RES
+1 wbs_adr_i[12] *546:5 77.9453 
+2 *546:5 *546:7 4.5 
+3 *546:7 *546:8 584.721 
+4 *546:8 *546:10 4.5 
+5 *546:10 *546:11 477.088 
+6 *546:11 *646:addr1[4] 7.36689 
+*END
+
+*D_NET *547 0.126362
+*CONN
+*P wbs_adr_i[13] I
+*I *646:addr1[5] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_adr_i[13] 0.00313171
+2 *646:addr1[5] 0.000466356
+3 *547:11 0.0112403
+4 *547:10 0.0107739
+5 *547:8 0.014382
+6 *547:7 0.014382
+7 *547:5 0.00313171
+8 *646:addr1[5] *646:addr1[6] 0.00216595
+9 *646:addr1[5] *646:addr1[7] 0.00194861
+10 *547:5 *580:7 0
+11 *547:8 *589:14 0.00544615
+12 *547:8 *598:10 0.0184185
+13 *547:11 *646:addr1[6] 2.5386e-05
+14 *547:11 *549:17 0.0274378
+15 *646:addr1[4] *646:addr1[5] 1.48618e-05
+16 *310:18 *547:8 0.00204228
+17 *318:18 *547:8 0.0113541
+*RES
+1 wbs_adr_i[13] *547:5 86.2503 
+2 *547:5 *547:7 4.5 
+3 *547:7 *547:8 555.882 
+4 *547:8 *547:10 4.5 
+5 *547:10 *547:11 469.614 
+6 *547:11 *646:addr1[5] 7.90738 
+*END
+
+*D_NET *548 0.0975671
+*CONN
+*P wbs_adr_i[14] I
+*I *646:addr1[6] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_adr_i[14] 0.000101807
+2 *646:addr1[6] 0.000687346
+3 *548:16 0.00486483
+4 *548:15 0.00417748
+5 *548:13 0.0164208
+6 *548:12 0.0164208
+7 *548:10 0.0122891
+8 *548:9 0.0122891
+9 *548:7 0.00346417
+10 *548:5 0.00356598
+11 *646:addr1[6] *646:addr1[7] 0.00016342
+12 *646:addr1[6] *549:17 2.01653e-05
+13 *548:10 *596:14 0.00189681
+14 *548:13 *593:21 0
+15 *646:addr1[4] *646:addr1[6] 0.00139203
+16 *646:addr1[5] *646:addr1[6] 0.00216595
+17 *309:15 *548:13 0
+18 *324:18 *548:16 0.00824464
+19 *333:18 *548:16 0.0093773
+20 *547:11 *646:addr1[6] 2.5386e-05
+*RES
+1 wbs_adr_i[14] *548:5 2.89455 
+2 *548:5 *548:7 95.0561 
+3 *548:7 *548:9 4.5 
+4 *548:9 *548:10 348.46 
+5 *548:10 *548:12 4.5 
+6 *548:12 *548:13 459.855 
+7 *548:13 *548:15 4.5 
+8 *548:15 *548:16 187.625 
+9 *548:16 *646:addr1[6] 14.6756 
+*END
+
+*D_NET *549 0.108955
+*CONN
+*P wbs_adr_i[15] I
+*I *646:addr1[7] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_adr_i[15] 0.000101807
+2 *646:addr1[7] 0.00107494
+3 *549:17 0.0108395
+4 *549:16 0.00976455
+5 *549:14 0.0155973
+6 *549:13 0.0161325
+7 *549:7 0.00415163
+8 *549:5 0.00371825
+9 *549:7 *554:11 0
+10 *549:13 *554:11 0
+11 *549:14 *607:18 0.00515153
+12 *646:addr1[4] *646:addr1[7] 0.000152831
+13 *646:addr1[5] *646:addr1[7] 0.00194861
+14 *646:addr1[6] *646:addr1[7] 0.00016342
+15 *646:addr1[6] *549:17 2.01653e-05
+16 *317:18 *549:14 0.0126997
+17 *547:11 *549:17 0.0274378
+*RES
+1 wbs_adr_i[15] *549:5 2.89455 
+2 *549:5 *549:7 99.2208 
+3 *549:7 *549:13 19.2415 
+4 *549:13 *549:14 516.505 
+5 *549:14 *549:16 4.5 
+6 *549:16 *549:17 442.622 
+7 *549:17 *646:addr1[7] 9.07702 
+*END
+
+*D_NET *554 0.093675
+*CONN
+*P wbs_adr_i[1] I
+*I *646:addr0[1] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_adr_i[1] 0.000676059
+2 *646:addr0[1] 0.000740758
+3 *554:11 0.0263373
+4 *554:10 0.0255966
+5 *554:8 0.0089696
+6 *554:7 0.00964566
+7 *554:8 *643:8 0.021709
+8 *554:11 *646:web0 0
+9 *144:11 *554:11 0
+10 *549:7 *554:11 0
+11 *549:13 *554:11 0
+*RES
+1 wbs_adr_i[1] *554:7 23.4795 
+2 *554:7 *554:8 320.73 
+3 *554:8 *554:10 4.5 
+4 *554:10 *554:11 717.104 
+5 *554:11 *646:addr0[1] 6.21389 
+*END
+
+*D_NET *565 0.0761942
+*CONN
+*P wbs_adr_i[2] I
+*I *646:addr0[2] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_adr_i[2] 0.00353257
+2 *646:addr0[2] 0.000928305
+3 *565:12 0.0117364
+4 *565:11 0.0108081
+5 *565:9 0.0227233
+6 *565:7 0.0228281
+7 *565:5 0.00363739
+8 *565:5 *598:7 0
+9 *565:9 *641:5 0
+*RES
+1 wbs_adr_i[2] *565:5 99.1354 
+2 *565:5 *565:7 2.98005 
+3 *565:7 *565:9 640.893 
+4 *565:9 *565:11 4.5 
+5 *565:11 *565:12 299.1 
+6 *565:12 *646:addr0[2] 17.2011 
+*END
+
+*D_NET *568 0.0755601
+*CONN
+*P wbs_adr_i[3] I
+*I *646:addr0[3] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_adr_i[3] 0.00354064
+2 *646:addr0[3] 0.000828974
+3 *568:12 0.0109594
+4 *568:11 0.0101304
+5 *568:9 0.023035
+6 *568:7 0.0232781
+7 *568:5 0.00378378
+8 *568:5 *601:7 0
+9 *568:5 *601:13 3.67528e-06
+*RES
+1 wbs_adr_i[3] *568:5 99.1354 
+2 *568:5 *568:7 6.91273 
+3 *568:7 *568:9 649.198 
+4 *568:9 *568:11 4.5 
+5 *568:11 *568:12 273.588 
+6 *568:12 *646:addr0[3] 14.7861 
+*END
+
+*D_NET *569 0.0729552
+*CONN
+*P wbs_adr_i[4] I
+*I *646:addr0[4] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_adr_i[4] 6.22868e-05
+2 *646:addr0[4] 0.000968793
+3 *569:10 0.00952775
+4 *569:9 0.00855896
+5 *569:7 0.0268876
+6 *569:5 0.0269499
+7 *646:addr0[4] *646:addr0[5] 0
+8 *569:7 *643:7 0
+*RES
+1 wbs_adr_i[4] *569:5 1.77093 
+2 *569:5 *569:7 756.553 
+3 *569:7 *569:9 4.5 
+4 *569:9 *569:10 236.985 
+5 *569:10 *646:addr0[4] 16.906 
+*END
+
+*D_NET *570 0.0726106
+*CONN
+*P wbs_adr_i[5] I
+*I *646:addr0[5] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_adr_i[5] 0.00354735
+2 *646:addr0[5] 0.000980895
+3 *570:12 0.00885094
+4 *570:11 0.00787005
+5 *570:9 0.023662
+6 *570:7 0.0239052
+7 *570:5 0.00379048
+8 *570:5 *603:7 0
+9 *570:5 *603:13 3.67528e-06
+10 *646:addr0[4] *646:addr0[5] 0
+*RES
+1 wbs_adr_i[5] *570:5 99.1354 
+2 *570:5 *570:7 6.91273 
+3 *570:7 *570:9 666.223 
+4 *570:9 *570:11 4.5 
+5 *570:11 *570:12 218.128 
+6 *570:12 *646:addr0[5] 15.1357 
+*END
+
+*D_NET *571 0.0713547
+*CONN
+*P wbs_adr_i[6] I
+*I *646:addr0[6] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_adr_i[6] 0.00354588
+2 *646:addr0[6] 0.00101625
+3 *571:12 0.00805898
+4 *571:11 0.00704273
+5 *571:9 0.0239677
+6 *571:7 0.0240725
+7 *571:5 0.00365069
+8 *646:addr0[6] *646:addr0[7] 0
+9 *571:5 *604:7 0
+*RES
+1 wbs_adr_i[6] *571:5 99.1354 
+2 *571:5 *571:7 2.98005 
+3 *571:7 *571:9 674.528 
+4 *571:9 *571:11 4.5 
+5 *571:11 *571:12 195.389 
+6 *571:12 *646:addr0[6] 17.3213 
+*END
+
+*D_NET *572 0.0710644
+*CONN
+*P wbs_adr_i[7] I
+*I *646:addr0[7] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_adr_i[7] 0.000101807
+2 *646:addr0[7] 0.000867555
+3 *572:14 0.00742428
+4 *572:13 0.00655672
+5 *572:11 0.0242734
+6 *572:9 0.0244572
+7 *572:7 0.00373274
+8 *572:5 0.00365069
+9 *572:7 *605:11 0
+10 *646:addr0[6] *646:addr0[7] 0
+*RES
+1 wbs_adr_i[7] *572:5 2.89455 
+2 *572:5 *572:7 99.2208 
+3 *572:7 *572:9 5.22729 
+4 *572:9 *572:11 682.833 
+5 *572:11 *572:13 4.5 
+6 *572:13 *572:14 182.079 
+7 *572:14 *646:addr0[7] 16.0318 
+*END
+
+*D_NET *573 0.144214
+*CONN
+*P wbs_adr_i[8] I
+*I *646:addr1[0] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_adr_i[8] 0.000101807
+2 *646:addr1[0] 0.000738432
+3 *573:14 0.0210709
+4 *573:13 0.0203325
+5 *573:11 0.0347547
+6 *573:9 0.0348003
+7 *573:7 0.00359442
+8 *573:5 0.00365069
+9 *325:14 *573:14 0
+10 *327:20 *573:14 0.000288157
+11 *329:18 *573:14 0.000193986
+12 *330:20 *573:14 0.00119817
+13 *335:18 *573:14 0.021735
+14 *345:12 *573:14 0.000838138
+15 *359:14 *646:addr1[0] 5.76913e-05
+16 *359:14 *573:14 0.000858956
+*RES
+1 wbs_adr_i[8] *573:5 2.89455 
+2 *573:5 *573:7 99.2208 
+3 *573:7 *573:9 1.29461 
+4 *573:9 *573:11 978.078 
+5 *573:11 *573:13 4.5 
+6 *573:13 *573:14 651.828 
+7 *573:14 *646:addr1[0] 10.7612 
+*END
+
+*D_NET *574 0.172177
+*CONN
+*P wbs_adr_i[9] I
+*I *646:addr1[1] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_adr_i[9] 0.0018966
+2 *646:addr1[1] 0.000784289
+3 *574:11 0.0147521
+4 *574:10 0.0139678
+5 *574:8 0.016421
+6 *574:7 0.016421
+7 *574:5 0.0018966
+8 *574:5 *607:9 0
+9 *574:5 *607:11 0
+10 *359:15 *574:11 0
+11 *544:8 *574:8 0.0679886
+12 *544:11 *574:11 0.0380489
+*RES
+1 wbs_adr_i[9] *574:5 52.6149 
+2 *574:5 *574:7 4.5 
+3 *574:7 *574:8 740.01 
+4 *574:8 *574:10 4.5 
+5 *574:10 *574:11 624.503 
+6 *574:11 *646:addr1[1] 5.81481 
+*END
+
+*D_NET *576 0.0975319
+*CONN
+*P wbs_dat_i[0] I
+*I *646:din0[0] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[0] 0.000971615
+2 *646:din0[0] 0.00119491
+3 *576:14 0.00704605
+4 *576:13 0.00585114
+5 *576:11 0.0178176
+6 *576:10 0.0178176
+7 *576:8 0.00804059
+8 *576:7 0.00901221
+9 *646:din0[0] *646:din0[1] 0
+10 *646:din0[0] *646:wmask0[3] 0
+11 *576:11 *607:11 0.00444548
+12 *576:11 *607:17 0
+13 *576:14 *607:24 0.00278568
+14 *543:12 *576:14 0.0225491
+*RES
+1 wbs_dat_i[0] *576:7 31.7845 
+2 *576:7 *576:8 217.573 
+3 *576:8 *576:10 4.5 
+4 *576:10 *576:11 527.541 
+5 *576:11 *576:13 4.5 
+6 *576:13 *576:14 270.815 
+7 *576:14 *646:din0[0] 13.9746 
+*END
+
+*D_NET *577 0.0703538
+*CONN
+*P wbs_dat_i[10] I
+*I *646:din0[10] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[10] 0.00132593
+2 *646:din0[10] 0.00144949
+3 *577:11 0.0194701
+4 *577:10 0.0180206
+5 *577:8 0.00995846
+6 *577:7 0.0112844
+7 *646:din0[10] *646:din0[8] 0
+8 *646:din0[10] *646:din0[9] 0.000426799
+9 *577:8 *586:8 0.00440699
+10 *577:11 *592:7 0
+11 *577:11 *592:13 0
+12 *577:11 *605:15 0
+13 *577:11 *606:15 0
+14 *311:15 *577:11 0.00237546
+15 *322:15 *577:11 0
+16 *333:17 *646:din0[10] 0
+17 *344:14 *646:din0[10] 0.0016355
+*RES
+1 wbs_dat_i[10] *577:7 40.0896 
+2 *577:7 *577:8 299.655 
+3 *577:8 *577:10 4.5 
+4 *577:10 *577:11 518.821 
+5 *577:11 *646:din0[10] 31.643 
+*END
+
+*D_NET *578 0.0836679
+*CONN
+*P wbs_dat_i[11] I
+*I *646:din0[11] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[11] 0.00161896
+2 *646:din0[11] 0.000806293
+3 *578:11 0.0154137
+4 *578:10 0.0146074
+5 *578:8 0.00749734
+6 *578:7 0.0091163
+7 *578:8 *587:8 0.02206
+8 *333:17 *578:11 4.62112e-05
+9 *344:14 *646:din0[11] 0.000374136
+10 *344:15 *578:11 0.0108176
+11 *355:18 *646:din0[11] 0.00130994
+*RES
+1 wbs_dat_i[11] *578:7 49.2251 
+2 *578:7 *578:8 299.1 
+3 *578:8 *578:10 4.5 
+4 *578:10 *578:11 510.308 
+5 *578:11 *646:din0[11] 7.96869 
+*END
+
+*D_NET *579 0.0901613
+*CONN
+*P wbs_dat_i[12] I
+*I *646:din0[12] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[12] 0.00103635
+2 *646:din0[12] 0.0010223
+3 *579:11 0.0169165
+4 *579:10 0.0158942
+5 *579:8 0.00714926
+6 *579:7 0.00818561
+7 *144:8 *579:8 0.0213299
+8 *355:18 *646:din0[12] 0
+9 *355:19 *579:11 0.017798
+10 *366:14 *646:din0[12] 0.000829253
+*RES
+1 wbs_dat_i[12] *579:7 32.1998 
+2 *579:7 *579:8 286.344 
+3 *579:8 *579:10 4.5 
+4 *579:10 *579:11 528.164 
+5 *579:11 *646:din0[12] 7.83508 
+*END
+
+*D_NET *580 0.0884036
+*CONN
+*P wbs_dat_i[13] I
+*I *646:din0[13] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[13] 6.44372e-05
+2 *646:din0[13] 0.000892174
+3 *580:13 0.013843
+4 *580:12 0.0129508
+5 *580:10 0.00676811
+6 *580:9 0.00676811
+7 *580:7 0.00223858
+8 *580:5 0.00230302
+9 *646:din0[13] *646:din0[14] 0
+10 *580:13 *594:9 0.00879336
+11 *366:14 *646:din0[13] 0.000115375
+12 *366:15 *580:13 0.00828525
+13 *377:14 *646:din0[13] 0.000707903
+14 *545:10 *580:10 0.0246735
+15 *547:5 *580:7 0
+*RES
+1 wbs_dat_i[13] *580:5 1.77093 
+2 *580:5 *580:7 61.4207 
+3 *580:7 *580:9 4.5 
+4 *580:9 *580:10 275.252 
+5 *580:10 *580:12 4.5 
+6 *580:12 *580:13 493.698 
+7 *580:13 *646:din0[13] 7.62998 
+*END
+
+*D_NET *581 0.0879701
+*CONN
+*P wbs_dat_i[14] I
+*I *646:din0[14] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[14] 0.0026338
+2 *646:din0[14] 0.000854455
+3 *581:11 0.0140247
+4 *581:10 0.0131702
+5 *581:8 0.00599804
+6 *581:7 0.00599804
+7 *581:5 0.0026338
+8 *646:din0[14] *646:din0[15] 0
+9 *581:8 *582:8 0.0225759
+10 *646:din0[13] *646:din0[14] 0
+11 *377:14 *646:din0[14] 0.000109709
+12 *377:15 *581:11 0.0191332
+13 *388:14 *646:din0[14] 0.000838249
+*RES
+1 wbs_dat_i[14] *581:5 69.6402 
+2 *581:5 *581:7 4.5 
+3 *581:7 *581:8 259.723 
+4 *581:8 *581:10 4.5 
+5 *581:10 *581:11 485.393 
+6 *581:11 *646:din0[14] 7.46355 
+*END
+
+*D_NET *582 0.0862923
+*CONN
+*P wbs_dat_i[15] I
+*I *646:din0[15] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[15] 0.00256212
+2 *646:din0[15] 0.000872792
+3 *582:11 0.0141419
+4 *582:10 0.0132691
+5 *582:8 0.00550371
+6 *582:7 0.00550371
+7 *582:5 0.00256212
+8 *646:din0[14] *646:din0[15] 0
+9 *144:11 *582:5 0
+10 *388:14 *646:din0[15] 0
+11 *388:15 *582:11 0.0186174
+12 *399:14 *646:din0[15] 0.000683551
+13 *581:8 *582:8 0.0225759
+*RES
+1 wbs_dat_i[15] *582:5 70.0555 
+2 *582:5 *582:7 4.5 
+3 *582:7 *582:8 246.967 
+4 *582:8 *582:10 4.5 
+5 *582:10 *582:11 484.978 
+6 *582:11 *646:din0[15] 7.33327 
+*END
+
+*D_NET *583 0.0610371
+*CONN
+*P wbs_dat_i[16] I
+*I *646:din0[16] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[16] 0.000101807
+2 *646:din0[16] 0.000944607
+3 *583:14 0.00993807
+4 *583:13 0.00899346
+5 *583:11 0.0160389
+6 *583:9 0.0162227
+7 *583:7 0.00380725
+8 *583:5 0.00372521
+9 *646:din0[16] *646:din0[17] 0.000429683
+10 *283:17 *646:din0[16] 0.000504243
+11 *399:14 *646:din0[16] 8.22964e-06
+12 *399:15 *646:din0[16] 0.000322948
+*RES
+1 wbs_dat_i[16] *583:5 2.89455 
+2 *583:5 *583:7 99.2208 
+3 *583:7 *583:9 5.22729 
+4 *583:9 *583:11 450.707 
+5 *583:11 *583:13 4.5 
+6 *583:13 *583:14 241.421 
+7 *583:14 *646:din0[16] 17.9716 
+*END
+
+*D_NET *584 0.0601553
+*CONN
+*P wbs_dat_i[17] I
+*I *646:din0[17] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[17] 0.000102237
+2 *646:din0[17] 0.00179153
+3 *584:14 0.00991496
+4 *584:13 0.00812344
+5 *584:11 0.0154529
+6 *584:9 0.0154985
+7 *584:7 0.00366893
+8 *584:5 0.00372564
+9 *646:din0[16] *646:din0[17] 0.000429683
+10 *283:17 *646:din0[17] 0.000893486
+11 *294:14 *646:din0[17] 5.11255e-05
+12 *399:14 *646:din0[17] 0
+13 *399:15 *646:din0[17] 0.000502815
+*RES
+1 wbs_dat_i[17] *584:5 2.89455 
+2 *584:5 *584:7 99.2208 
+3 *584:7 *584:9 1.29461 
+4 *584:9 *584:11 434.097 
+5 *584:11 *584:13 4.5 
+6 *584:13 *584:14 217.019 
+7 *584:14 *646:din0[17] 34.7228 
+*END
+
+*D_NET *585 0.0700748
+*CONN
+*P wbs_dat_i[18] I
+*I *646:din0[18] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[18] 0.0036271
+2 *646:din0[18] 0.00103196
+3 *585:15 0.0177189
+4 *585:14 0.016687
+5 *585:12 0.00472189
+6 *585:11 0.00492322
+7 *585:5 0.00382842
+8 *585:12 *592:14 0.00708501
+9 *585:12 *601:14 0.00950555
+10 *283:17 *585:15 0
+11 *294:14 *646:din0[18] 0.000803555
+12 *303:14 *646:din0[18] 0.000142243
+*RES
+1 wbs_dat_i[18] *585:5 99.1354 
+2 *585:5 *585:11 9.95934 
+3 *585:11 *585:12 199.826 
+4 *585:12 *585:14 4.5 
+5 *585:14 *585:15 451.342 
+6 *585:15 *646:din0[18] 7.97881 
+*END
+
+*D_NET *586 0.0650743
+*CONN
+*P wbs_dat_i[19] I
+*I *646:din0[19] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[19] 0.00132735
+2 *646:din0[19] 0.00094394
+3 *586:11 0.0140801
+4 *586:10 0.0131362
+5 *586:8 0.00568489
+6 *586:7 0.00701224
+7 *646:din0[19] *646:din0[20] 0
+8 *586:11 *596:11 0.00363666
+9 *294:15 *586:11 0.0138092
+10 *294:18 *586:8 0.000109427
+11 *303:14 *646:din0[19] 0.000927214
+12 *304:19 *646:din0[19] 0
+13 *577:8 *586:8 0.00440699
+*RES
+1 wbs_dat_i[19] *586:7 40.9201 
+2 *586:7 *586:8 187.07 
+3 *586:8 *586:10 4.5 
+4 *586:10 *586:11 518.613 
+5 *586:11 *646:din0[19] 7.6594 
+*END
+
+*D_NET *587 0.0942908
+*CONN
+*P wbs_dat_i[1] I
+*I *646:din0[1] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[1] 0.00164588
+2 *646:din0[1] 0.00116659
+3 *587:11 0.0184025
+4 *587:10 0.0172359
+5 *587:8 0.0137481
+6 *587:7 0.015394
+7 *646:din0[1] *646:din0[2] 0
+8 *587:11 *589:11 0
+9 *587:11 *590:9 0.00463791
+10 *587:11 *602:15 0
+11 *646:din0[0] *646:din0[1] 0
+12 *578:8 *587:8 0.02206
+*RES
+1 wbs_dat_i[1] *587:7 48.8099 
+2 *587:7 *587:8 468.254 
+3 *587:8 *587:10 4.5 
+4 *587:10 *587:11 510.724 
+5 *587:11 *646:din0[1] 7.45682 
+*END
+
+*D_NET *588 0.0701638
+*CONN
+*P wbs_dat_i[20] I
+*I *646:din0[20] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[20] 6.22868e-05
+2 *646:din0[20] 0.00131065
+3 *588:13 0.0101778
+4 *588:12 0.00886714
+5 *588:10 0.00670551
+6 *588:9 0.00670551
+7 *588:7 0.00568016
+8 *588:5 0.00574244
+9 *588:7 *607:21 0
+10 *646:din0[19] *646:din0[20] 0
+11 *303:15 *588:13 0.024859
+12 *304:19 *646:din0[20] 2.43027e-05
+13 *305:17 *646:din0[20] 2.90182e-05
+*RES
+1 wbs_dat_i[20] *588:5 1.77093 
+2 *588:5 *588:7 154.022 
+3 *588:7 *588:9 4.5 
+4 *588:9 *588:10 174.869 
+5 *588:10 *588:12 4.5 
+6 *588:12 *588:13 401.097 
+7 *588:13 *646:din0[20] 7.72325 
+*END
+
+*D_NET *589 0.0752868
+*CONN
+*P wbs_dat_i[21] I
+*I *646:din0[21] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[21] 0.00123356
+2 *646:din0[21] 0.00073853
+3 *589:17 0.0112988
+4 *589:16 0.0105603
+5 *589:14 0.0035307
+6 *589:13 0.0035307
+7 *589:11 0.00235496
+8 *589:10 0.00235496
+9 *589:8 0.00123356
+10 *646:din0[21] *646:din0[22] 5.76913e-05
+11 *589:8 *643:14 0.000211546
+12 *589:11 *590:7 0.000606757
+13 *589:11 *590:9 0
+14 *589:14 *598:10 0.000417422
+15 *589:17 *590:15 0.0269434
+16 *304:19 *646:din0[21] 0.00140831
+17 *304:19 *589:17 0.000843473
+18 *305:17 *646:din0[21] 7.39821e-05
+19 *305:17 *589:17 0.000250402
+20 *306:17 *646:din0[21] 0.000145855
+21 *528:8 *589:8 0.00204565
+22 *547:8 *589:14 0.00544615
+23 *587:11 *589:11 0
+*RES
+1 wbs_dat_i[21] *589:8 46.8023 
+2 *589:8 *589:10 4.5 
+3 *589:10 *589:11 67.8571 
+4 *589:11 *589:13 4.5 
+5 *589:13 *589:14 137.71 
+6 *589:14 *589:16 4.5 
+7 *589:16 *589:17 467.953 
+8 *589:17 *646:din0[21] 7.477 
+*END
+
+*D_NET *590 0.0717915
+*CONN
+*P wbs_dat_i[22] I
+*I *646:din0[22] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[22] 0.00136538
+2 *646:din0[22] 0.00115857
+3 *590:15 0.0108283
+4 *590:14 0.00966975
+5 *590:12 0.00529926
+6 *590:11 0.00529926
+7 *590:9 0.00190988
+8 *590:7 0.00327526
+9 *646:din0[21] *646:din0[22] 5.76913e-05
+10 *304:19 *590:15 2.5386e-05
+11 *306:17 *646:din0[22] 0.000714689
+12 *306:17 *590:15 0
+13 *307:14 *646:din0[22] 0
+14 *587:11 *590:9 0.00463791
+15 *589:11 *590:7 0.000606757
+16 *589:11 *590:9 0
+17 *589:17 *590:15 0.0269434
+*RES
+1 wbs_dat_i[22] *590:7 43.1252 
+2 *590:7 *590:9 79.9116 
+3 *590:9 *590:11 4.5 
+4 *590:11 *590:12 142.147 
+5 *590:12 *590:14 4.5 
+6 *590:14 *590:15 435.978 
+7 *590:15 *646:din0[22] 8.19064 
+*END
+
+*D_NET *591 0.0578662
+*CONN
+*P wbs_dat_i[23] I
+*I *646:din0[23] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[23] 0.000101807
+2 *646:din0[23] 0.0014184
+3 *591:17 0.0160762
+4 *591:16 0.0146578
+5 *591:14 0.00447691
+6 *591:13 0.00447691
+7 *591:11 0.00111659
+8 *591:9 0.00130044
+9 *591:7 0.00380691
+10 *591:5 0.00372487
+11 *591:11 *601:17 0.00258603
+12 *591:14 *606:12 0.00319399
+13 *306:17 *591:17 0
+14 *307:14 *646:din0[23] 0.000929355
+15 *308:14 *646:din0[23] 0
+*RES
+1 wbs_dat_i[23] *591:5 2.89455 
+2 *591:5 *591:7 99.2208 
+3 *591:7 *591:9 5.22729 
+4 *591:9 *591:11 46.2518 
+5 *591:11 *591:13 4.5 
+6 *591:13 *591:14 133.274 
+7 *591:14 *591:16 4.5 
+8 *591:16 *591:17 410.648 
+9 *591:17 *646:din0[23] 8.13685 
+*END
+
+*D_NET *592 0.0737691
+*CONN
+*P wbs_dat_i[24] I
+*I *646:din0[24] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[24] 0.000101807
+2 *646:din0[24] 0.000999184
+3 *592:17 0.0123364
+4 *592:16 0.0113372
+5 *592:14 0.00321044
+6 *592:13 0.00341069
+7 *592:7 0.00382331
+8 *592:5 0.00372487
+9 *592:14 *597:14 0
+10 *307:15 *592:17 0.0260607
+11 *308:14 *646:din0[24] 0.00167939
+12 *309:14 *646:din0[24] 0
+13 *577:11 *592:7 0
+14 *577:11 *592:13 0
+15 *585:12 *592:14 0.00708501
+*RES
+1 wbs_dat_i[24] *592:5 2.89455 
+2 *592:5 *592:7 99.2208 
+3 *592:7 *592:13 10.1059 
+4 *592:13 *592:14 116.636 
+5 *592:14 *592:16 4.5 
+6 *592:16 *592:17 452.588 
+7 *592:17 *646:din0[24] 7.91746 
+*END
+
+*D_NET *593 0.0602127
+*CONN
+*P wbs_dat_i[25] I
+*I *646:din0[25] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[25] 0.000926506
+2 *646:din0[25] 0.000948332
+3 *593:21 0.0131242
+4 *593:20 0.0121759
+5 *593:18 0.00122981
+6 *593:17 0.00122981
+7 *593:15 0.00219381
+8 *593:14 0.00324396
+9 *593:10 0.00197665
+10 *593:14 *595:8 0.000212432
+11 *593:21 *599:11 0.00129391
+12 *308:15 *593:21 0.0136901
+13 *308:18 *593:18 0.000111708
+14 *309:14 *646:din0[25] 0.00109594
+15 *310:14 *646:din0[25] 0.000395466
+16 *528:8 *593:10 0.000313327
+17 *528:8 *593:14 0.000882798
+18 *546:8 *593:18 0.00516804
+19 *548:13 *593:21 0
+*RES
+1 wbs_dat_i[25] *593:10 32.5446 
+2 *593:10 *593:14 42.1045 
+3 *593:14 *593:15 58.3063 
+4 *593:15 *593:17 4.5 
+5 *593:17 *593:18 55.0746 
+6 *593:18 *593:20 4.5 
+7 *593:20 *593:21 476.673 
+8 *593:21 *646:din0[25] 8.1259 
+*END
+
+*D_NET *594 0.0674344
+*CONN
+*P wbs_dat_i[26] I
+*I *646:din0[26] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[26] 0.00163672
+2 *646:din0[26] 0.00106573
+3 *594:15 0.00884154
+4 *594:14 0.00777581
+5 *594:12 0.0034946
+6 *594:11 0.0034946
+7 *594:9 0.00401458
+8 *594:7 0.0056513
+9 *646:din0[26] *646:din0[27] 0
+10 *309:15 *594:15 0.0217368
+11 *310:14 *646:din0[26] 0.000929411
+12 *580:13 *594:9 0.00879336
+*RES
+1 wbs_dat_i[26] *594:7 45.3724 
+2 *594:7 *594:9 164.208 
+3 *594:9 *594:11 4.5 
+4 *594:11 *594:12 91.6784 
+5 *594:12 *594:14 4.5 
+6 *594:14 *594:15 350.851 
+7 *594:15 *646:din0[26] 7.74934 
+*END
+
+*D_NET *595 0.0673165
+*CONN
+*P wbs_dat_i[27] I
+*I *646:din0[27] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[27] 0.000712582
+2 *646:din0[27] 0.00121591
+3 *595:11 0.0154977
+4 *595:10 0.0142817
+5 *595:8 0.00180614
+6 *595:7 0.00251872
+7 *646:din0[27] *646:din0[28] 0
+8 *595:8 *599:10 0.000655938
+9 *646:din0[26] *646:din0[27] 0
+10 *310:15 *595:11 0.0269863
+11 *312:14 *646:din0[27] 0.000707903
+12 *528:8 *595:8 0.00272113
+13 *593:14 *595:8 0.000212432
+*RES
+1 wbs_dat_i[27] *595:7 24.31 
+2 *595:7 *595:8 73.3765 
+3 *595:8 *595:10 4.5 
+4 *595:10 *595:11 535.223 
+5 *595:11 *646:din0[27] 7.50642 
+*END
+
+*D_NET *596 0.0851097
+*CONN
+*P wbs_dat_i[28] I
+*I *646:din0[28] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[28] 0.000253616
+2 *646:din0[28] 0.00100728
+3 *596:17 0.0050383
+4 *596:16 0.00403102
+5 *596:14 0.00196427
+6 *596:13 0.00196427
+7 *596:11 0.00185958
+8 *596:9 0.0021132
+9 *596:14 *597:14 0
+10 *596:14 *599:16 0
+11 *596:17 *597:15 0.0281887
+12 *646:din0[27] *646:din0[28] 0
+13 *294:15 *596:11 0.00366057
+14 *312:14 *646:din0[28] 0.000239546
+15 *312:15 *596:17 0.028439
+16 *312:18 *596:14 6.50727e-05
+17 *313:14 *646:din0[28] 0.000751793
+18 *548:10 *596:14 0.00189681
+19 *586:11 *596:11 0.00363666
+*RES
+1 wbs_dat_i[28] *596:9 7.4379 
+2 *596:9 *596:11 95.0561 
+3 *596:11 *596:13 4.5 
+4 *596:13 *596:14 66.7212 
+5 *596:14 *596:16 4.5 
+6 *596:16 *596:17 459.232 
+7 *596:17 *646:din0[28] 8.09305 
+*END
+
+*D_NET *597 0.0641873
+*CONN
+*P wbs_dat_i[29] I
+*I *646:din0[29] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[29] 0.00359987
+2 *646:din0[29] 0.00103057
+3 *597:15 0.0111382
+4 *597:14 0.0113526
+5 *597:11 0.00140849
+6 *597:5 0.00376334
+7 *597:14 *599:16 0.00239674
+8 *307:15 *597:5 0
+9 *312:15 *597:15 1.72594e-05
+10 *313:14 *646:din0[29] 0.000634966
+11 *314:14 *646:din0[29] 0.000656566
+12 *592:14 *597:14 0
+13 *596:14 *597:14 0
+14 *596:17 *597:15 0.0281887
+*RES
+1 wbs_dat_i[29] *597:5 99.1354 
+2 *597:5 *597:11 8.46932 
+3 *597:11 *597:14 46.8187 
+4 *597:14 *597:15 455.91 
+5 *597:15 *646:din0[29] 8.18055 
+*END
+
+*D_NET *598 0.090539
+*CONN
+*P wbs_dat_i[2] I
+*I *646:din0[2] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[2] 6.22868e-05
+2 *646:din0[2] 0.00127355
+3 *598:13 0.0185833
+4 *598:12 0.0173098
+5 *598:10 0.0141058
+6 *598:9 0.0141058
+7 *598:7 0.0031001
+8 *598:5 0.00316239
+9 *646:din0[2] *646:din0[3] 0
+10 *646:din0[1] *646:din0[2] 0
+11 *547:8 *598:10 0.0184185
+12 *565:5 *598:7 0
+13 *589:14 *598:10 0.000417422
+*RES
+1 wbs_dat_i[2] *598:5 1.77093 
+2 *598:5 *598:7 86.7511 
+3 *598:7 *598:9 4.5 
+4 *598:9 *598:10 449.398 
+5 *598:10 *598:12 4.5 
+6 *598:12 *598:13 468.368 
+7 *598:13 *646:din0[2] 7.52742 
+*END
+
+*D_NET *599 0.0662475
+*CONN
+*P wbs_dat_i[30] I
+*I *646:din0[30] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[30] 0.000786965
+2 *646:din0[30] 0.00101255
+3 *599:17 0.0111331
+4 *599:16 0.0110235
+5 *599:11 0.00328779
+6 *599:10 0.0031718
+7 *308:15 *599:11 0.00127656
+8 *312:18 *599:16 0
+9 *313:15 *599:17 0.0282148
+10 *314:14 *646:din0[30] 0.000637106
+11 *315:14 *646:din0[30] 0.000698907
+12 *528:8 *599:10 0.000657842
+13 *593:21 *599:11 0.00129391
+14 *595:8 *599:10 0.000655938
+15 *596:14 *599:16 0
+16 *597:14 *599:16 0.00239674
+*RES
+1 wbs_dat_i[30] *599:10 35.7734 
+2 *599:10 *599:11 80.3147 
+3 *599:11 *599:16 42.445 
+4 *599:16 *599:17 456.326 
+5 *599:17 *646:din0[30] 8.15029 
+*END
+
+*D_NET *600 0.0502727
+*CONN
+*P wbs_dat_i[31] I
+*I *646:din0[31] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[31] 0.00103131
+2 *646:din0[31] 0.000865223
+3 *600:11 0.0154418
+4 *600:10 0.0156079
+5 *144:7 *600:11 0.000235374
+6 *314:15 *600:11 0.0135713
+7 *315:14 *646:din0[31] 0.000623389
+8 *316:14 *646:din0[31] 0.00169322
+9 *528:8 *600:10 0.00120333
+*RES
+1 wbs_dat_i[31] *600:10 41.874 
+2 *600:10 *600:11 535.639 
+3 *600:11 *646:din0[31] 7.94519 
+*END
+
+*D_NET *601 0.0818572
+*CONN
+*P wbs_dat_i[3] I
+*I *646:din0[3] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[3] 0.000101807
+2 *646:din0[3] 0.00110965
+3 *601:17 0.016636
+4 *601:16 0.0155264
+5 *601:14 0.0143412
+6 *601:13 0.014601
+7 *601:7 0.00380192
+8 *601:5 0.00364399
+9 *646:din0[3] *646:din0[4] 0
+10 *646:din0[2] *646:din0[3] 0
+11 *568:5 *601:7 0
+12 *568:5 *601:13 3.67528e-06
+13 *585:12 *601:14 0.00950555
+14 *591:11 *601:17 0.00258603
+*RES
+1 wbs_dat_i[3] *601:5 2.89455 
+2 *601:5 *601:7 99.2208 
+3 *601:7 *601:13 11.7913 
+4 *601:13 *601:14 433.314 
+5 *601:14 *601:16 4.5 
+6 *601:16 *601:17 451.758 
+7 *601:17 *646:din0[3] 7.39042 
+*END
+
+*D_NET *602 0.0960625
+*CONN
+*P wbs_dat_i[4] I
+*I *646:din0[4] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[4] 0.00367219
+2 *646:din0[4] 0.00180645
+3 *602:15 0.0172604
+4 *602:14 0.015454
+5 *602:12 0.00858245
+6 *602:11 0.00940956
+7 *602:5 0.0044993
+8 *646:din0[4] *646:din0[5] 0
+9 *646:din0[4] *603:17 0
+10 *646:din0[4] *607:24 0.00225672
+11 *602:12 *640:12 0.0331214
+12 *646:din0[3] *646:din0[4] 0
+13 *587:11 *602:15 0
+*RES
+1 wbs_dat_i[4] *602:5 99.1354 
+2 *602:5 *602:11 26.5694 
+3 *602:11 *602:12 378.408 
+4 *602:12 *602:14 4.5 
+5 *602:14 *602:15 434.525 
+6 *602:15 *646:din0[4] 42.6242 
+*END
+
+*D_NET *603 0.0941202
+*CONN
+*P wbs_dat_i[5] I
+*I *646:din0[5] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[5] 0.000105677
+2 *646:din0[5] 0.00146049
+3 *603:17 0.0166106
+4 *603:16 0.0151501
+5 *603:14 0.0103163
+6 *603:13 0.0115142
+7 *603:7 0.00474678
+8 *603:5 0.00365456
+9 *646:din0[5] *646:din0[6] 3.31915e-06
+10 *603:14 *641:12 0.0299162
+11 *646:din0[4] *646:din0[5] 0
+12 *646:din0[4] *603:17 0
+13 *272:14 *646:din0[5] 0.000638154
+14 *570:5 *603:7 0
+15 *570:5 *603:13 3.67528e-06
+*RES
+1 wbs_dat_i[5] *603:5 2.89455 
+2 *603:5 *603:7 99.2208 
+3 *603:7 *603:13 37.537 
+4 *603:13 *603:14 391.164 
+5 *603:14 *603:16 4.5 
+6 *603:16 *603:17 426.012 
+7 *603:17 *646:din0[5] 8.41335 
+*END
+
+*D_NET *604 0.0931335
+*CONN
+*P wbs_dat_i[6] I
+*I *646:din0[6] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[6] 6.22868e-05
+2 *646:din0[6] 0.000949057
+3 *604:13 0.015813
+4 *604:12 0.0148639
+5 *604:10 0.00835668
+6 *604:9 0.00835668
+7 *604:7 0.00492626
+8 *604:5 0.00498855
+9 *604:10 *605:12 0.0338857
+10 *646:din0[5] *646:din0[6] 3.31915e-06
+11 *272:14 *646:din0[6] 0.000928115
+12 *311:15 *646:din0[6] 0
+13 *571:5 *604:7 0
+*RES
+1 wbs_dat_i[6] *604:5 1.77093 
+2 *604:5 *604:7 136.997 
+3 *604:7 *604:9 4.5 
+4 *604:9 *604:10 374.526 
+5 *604:10 *604:12 4.5 
+6 *604:12 *604:13 418.122 
+7 *604:13 *646:din0[6] 7.69302 
+*END
+
+*D_NET *605 0.104724
+*CONN
+*P wbs_dat_i[7] I
+*I *646:din0[7] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[7] 0.00367478
+2 *646:din0[7] 0.000831166
+3 *605:15 0.0112762
+4 *605:14 0.0104451
+5 *605:12 0.00804863
+6 *605:11 0.00970016
+7 *605:5 0.00532631
+8 *272:15 *605:15 0.0202037
+9 *311:15 *646:din0[7] 0.000929216
+10 *311:15 *605:15 0
+11 *322:14 *646:din0[7] 0.000403473
+12 *572:7 *605:11 0
+13 *577:11 *605:15 0
+14 *604:10 *605:12 0.0338857
+*RES
+1 wbs_dat_i[7] *605:5 99.1354 
+2 *605:5 *605:11 49.7747 
+3 *605:11 *605:12 366.207 
+4 *605:12 *605:14 4.5 
+5 *605:14 *605:15 417.707 
+6 *605:15 *646:din0[7] 7.7527 
+*END
+
+*D_NET *606 0.0903724
+*CONN
+*P wbs_dat_i[8] I
+*I *646:din0[8] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[8] 0.00367321
+2 *646:din0[8] 0.00141526
+3 *606:15 0.0157571
+4 *606:14 0.0143418
+5 *606:12 0.00820767
+6 *606:11 0.00820767
+7 *606:9 0.00188398
+8 *606:5 0.00555719
+9 *646:din0[8] *646:din0[9] 0.000447754
+10 *606:12 *642:14 0.0260318
+11 *606:15 *646:din0[9] 1.8662e-05
+12 *646:din0[10] *646:din0[8] 0
+13 *322:14 *646:din0[8] 6.71996e-05
+14 *322:15 *606:15 0.00156913
+15 *577:11 *606:15 0
+16 *591:14 *606:12 0.00319399
+*RES
+1 wbs_dat_i[8] *606:5 99.1354 
+2 *606:5 *606:9 49.6471 
+3 *606:9 *606:11 4.5 
+4 *606:11 *606:12 350.124 
+5 *606:12 *606:14 4.5 
+6 *606:14 *606:15 409.402 
+7 *606:15 *646:din0[8] 8.07544 
+*END
+
+*D_NET *607 0.0774883
+*CONN
+*P wbs_dat_i[9] I
+*I *646:din0[9] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_dat_i[9] 0.000199312
+2 *646:din0[9] 0.00166845
+3 *607:24 0.00365177
+4 *607:23 0.00198332
+5 *607:21 0.0163215
+6 *607:20 0.0163215
+7 *607:18 0.00735103
+8 *607:17 0.00793098
+9 *607:11 0.00313625
+10 *607:9 0.00275561
+11 *646:din0[4] *607:24 0.00225672
+12 *646:din0[8] *646:din0[9] 0.000447754
+13 *646:din0[10] *646:din0[9] 0.000426799
+14 *322:15 *646:din0[9] 1.66771e-05
+15 *333:17 *646:din0[9] 0.000619275
+16 *549:14 *607:18 0.00515153
+17 *574:5 *607:9 0
+18 *574:5 *607:11 0
+19 *576:11 *607:11 0.00444548
+20 *576:11 *607:17 0
+21 *576:14 *607:24 0.00278568
+22 *588:7 *607:21 0
+23 *606:15 *646:din0[9] 1.8662e-05
+*RES
+1 wbs_dat_i[9] *607:9 5.75246 
+2 *607:9 *607:11 98.3903 
+3 *607:11 *607:17 20.6582 
+4 *607:17 *607:18 245.304 
+5 *607:18 *607:20 4.5 
+6 *607:20 *607:21 442.83 
+7 *607:21 *607:23 4.5 
+8 *607:23 *607:24 74.4857 
+9 *607:24 *646:din0[9] 28.7076 
+*END
+
+*D_NET *640 0.11335
+*CONN
+*P wbs_sel_i[0] I
+*I *646:wmask0[0] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_sel_i[0] 0.00351916
+2 *646:wmask0[0] 0.0012613
+3 *640:15 0.0122311
+4 *640:14 0.0109698
+5 *640:12 0.011178
+6 *640:11 0.0119421
+7 *640:5 0.00428326
+8 *646:wmask0[0] *646:wmask0[1] 0.000221339
+9 *640:15 *641:15 0.0246228
+10 *646:addr0[0] *646:wmask0[0] 0
+11 *602:12 *640:12 0.0331214
+*RES
+1 wbs_sel_i[0] *640:5 99.1354 
+2 *640:5 *640:11 26.1542 
+3 *640:11 *640:12 449.398 
+4 *640:12 *640:14 4.5 
+5 *640:14 *640:15 435.148 
+6 *640:15 *646:wmask0[0] 7.71149 
+*END
+
+*D_NET *641 0.111369
+*CONN
+*P wbs_sel_i[1] I
+*I *646:wmask0[1] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_sel_i[1] 0.00353257
+2 *646:wmask0[1] 0.00114128
+3 *641:15 0.0118147
+4 *641:14 0.0106735
+5 *641:12 0.0115499
+6 *641:11 0.0127733
+7 *641:5 0.00475598
+8 *646:wmask0[1] *646:wmask0[2] 0.000367636
+9 *646:wmask0[0] *646:wmask0[1] 0.000221339
+10 *565:9 *641:5 0
+11 *603:14 *641:12 0.0299162
+12 *640:15 *641:15 0.0246228
+*RES
+1 wbs_sel_i[1] *641:5 99.1354 
+2 *641:5 *641:11 38.8072 
+3 *641:11 *641:12 424.995 
+4 *641:12 *641:14 4.5 
+5 *641:14 *641:15 427.258 
+6 *641:15 *646:wmask0[1] 7.97461 
+*END
+
+*D_NET *642 0.0906043
+*CONN
+*P wbs_sel_i[2] I
+*I *646:wmask0[2] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_sel_i[2] 0.000104086
+2 *646:wmask0[2] 0.00116848
+3 *642:17 0.0157347
+4 *642:16 0.0145662
+5 *642:14 0.0107553
+6 *642:13 0.0107553
+7 *642:11 0.00165214
+8 *642:9 0.00184085
+9 *642:7 0.00385616
+10 *642:5 0.00377153
+11 *646:wmask0[2] *646:wmask0[3] 0
+12 *646:wmask0[1] *646:wmask0[2] 0.000367636
+13 *606:12 *642:14 0.0260318
+*RES
+1 wbs_sel_i[2] *642:5 2.89455 
+2 *642:5 *642:7 99.2208 
+3 *642:7 *642:9 5.22729 
+4 *642:9 *642:11 46.2518 
+5 *642:11 *642:13 4.5 
+6 *642:13 *642:14 407.802 
+7 *642:14 *642:16 4.5 
+8 *642:16 *642:17 409.817 
+9 *642:17 *646:wmask0[2] 8.1561 
+*END
+
+*D_NET *643 0.0900614
+*CONN
+*P wbs_sel_i[3] I
+*I *646:wmask0[3] I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_sel_i[3] 0.000697728
+2 *646:wmask0[3] 0.00126962
+3 *643:15 0.0204334
+4 *643:14 0.0198234
+5 *643:8 0.0102106
+6 *643:7 0.0102486
+7 *646:din0[0] *646:wmask0[3] 0
+8 *646:wmask0[2] *646:wmask0[3] 0
+9 *528:8 *643:8 0.00451631
+10 *528:8 *643:14 0.000941217
+11 *554:8 *643:8 0.021709
+12 *569:7 *643:7 0
+13 *589:8 *643:14 0.000211546
+*RES
+1 wbs_sel_i[3] *643:7 23.8947 
+2 *643:7 *643:8 354.838 
+3 *643:8 *643:14 30.482 
+4 *643:14 *643:15 535.223 
+5 *643:15 *646:wmask0[3] 7.79221 
+*END
+
+*D_NET *645 0.0738417
+*CONN
+*P wbs_we_i I
+*I *646:web0 I *D sky130_sram_1kbyte_1rw1r_32x256_8
+*CAP
+1 wbs_we_i 0.000104086
+2 *646:web0 0.000650899
+3 *645:14 0.0138695
+4 *645:13 0.0132186
+5 *645:11 0.0191977
+6 *645:9 0.0193071
+7 *645:7 0.0037495
+8 *645:5 0.00374421
+9 *554:11 *646:web0 0
+*RES
+1 wbs_we_i *645:5 2.89455 
+2 *645:5 *645:7 99.2208 
+3 *645:7 *645:9 2.98005 
+4 *645:9 *645:11 522.961 
+5 *645:11 *645:13 4.5 
+6 *645:13 *645:14 365.653 
+7 *645:14 *646:web0 11.3876 
+*END

@@ -1,0 +1,6 @@
+$user_project_wrapper
+ 100
+r_0_met3.3d
+500 500 2 Nov 29 03:26:39 2020
+Rule File Pathname: /home/aanujdu/caravel_tut/caravel_example/openlane/user_project_wrapper/runs/user_project_wrapper/reports/finishing/drc.rpt
+met3.3d: Metal3 > 3um spacing to unrelated m3 < 0.4um 

@@ -1,0 +1,18 @@
+Design Name: user_project_wrapper
+Run Directory: /home/aanujdu/caravel_tut/caravel_example/openlane/user_project_wrapper/runs/user_project_wrapper
+----------------------------------------
+
+Magic DRC Summary:
+Source: /home/aanujdu/caravel_tut/caravel_example/openlane/user_project_wrapper/runs/user_project_wrapper/reports/finishing/drc.rpt
+Violation Message "Metal3 > 3um spacing to unrelated m3 < 0.4um (met3.3d) "found 21 Times.
+Total Magic DRC violations is 21
+----------------------------------------
+
+LVS Summary:
+Source: /home/aanujdu/caravel_tut/caravel_example/openlane/user_project_wrapper/runs/user_project_wrapper/logs/finishing/29-user_project_wrapper.lvs.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+No antenna report found.
