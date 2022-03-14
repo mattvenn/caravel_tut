@@ -18,7 +18,12 @@ set ::env(STD_CELL_LIBRARY) "sky130_fd_sc_hd"
 
 set script_dir [file dirname [file normalize [info script]]]
 
+set lef_root $script_dir/../../lef/
+set gds_root $script_dir/../../gds/
+
 set ::env(DESIGN_NAME) user_proj_example
+
+set ::env(SYNTH_NO_FLAT) 1
 
 set ::env(VERILOG_FILES) "\
 	$::env(CARAVEL_ROOT)/verilog/rtl/defines.v \
@@ -54,3 +59,20 @@ set ::env(GND_NETS) [list {vssd1}]
 set ::env(DIODE_INSERTION_STRATEGY) 4 
 # If you're going to use multiple power domains, then disable cvc run.
 set ::env(RUN_CVC) 1
+
+
+### Black-box verilog and views
+#$script_dir/../../verilog/rtl/sram_macros/sky130_sram_1kbyte_1rw1r_8x1024_8.v
+set ::env(VERILOG_FILES_BLACKBOX) "\
+        $script_dir/../../verilog/rtl/modulonet/bram_wstrb.v \
+        $script_dir/../../verilog/rtl/modulonet/bram.v \
+        $script_dir/../../verilog/rtl/modulonet/bram_simple.v 
+	"
+
+#set ::env(EXTRA_LEFS) "\
+#	$lef_root/sky130_sram_1kbyte_1rw1r_8x1024_8.lef"
+
+#set ::env(EXTRA_GDS_FILES) "\
+#	$gds_root/sky130_sram_1kbyte_1rw1r_8x1024_8.gds"
+
+
