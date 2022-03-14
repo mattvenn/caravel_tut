@@ -85,7 +85,7 @@ module user_project_wrapper #(
     `endif
 
         .clk0 (user_clock2),
-        .csb0 (1'b0),
+        .csb0 (la_data_in[0]),
         .web0 (wbs_we_i),
         .wmask0 (wbs_sel_i),
         .addr0 (wbs_adr_i[7:0]),
@@ -93,7 +93,7 @@ module user_project_wrapper #(
         .dout0 (la_data_out[31:0]),
 
         .clk1 (user_clock2),
-        .csb1 (1'b0),
+        .csb1 (la_data_in[1]),
         .addr1 (wbs_adr_i[15:8]),
         .dout1 (la_data_out[63:32])
     );
