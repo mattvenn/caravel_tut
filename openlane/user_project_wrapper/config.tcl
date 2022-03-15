@@ -173,7 +173,7 @@ set ::env(EXTRA_GDS_FILES) "\
 	$gds_root/sky130_sram_1kbyte_1rw1r_32x256_8.gds"
 
 # these get generated - if a project specifies obstruction in the info.yaml
-#source user_project_wrapper/obstruction.tcl
+source user_project_wrapper/obstruction.tcl
 
 set ::env(GLB_RT_ALLOW_CONGESTION) "1"
 
